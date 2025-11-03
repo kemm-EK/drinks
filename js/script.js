@@ -22,6 +22,164 @@ let data = [];
 let viewUnit = "cl"; // "cl" | "oz"
 let usageMap = null; // Map over ingrediens → { name, count }
 
+// Ekstra info om ingredienser til indkøbslisten
+const ingredientMeta = {
+  // SPIRITUS / LIKØRER
+  "benedictine d.o.m.": {
+    type: "Likør (urtelikør)",
+    note: "Fransk klosterlikør – køb som færdig flaske (Bénédictine D.O.M.).",
+  },
+  "triple sec": {
+    type: "Likør (orange/triple sec)",
+    note: "Citruslikør – fx Cointreau, Pierre Ferrand Dry Curaçao, Bols Triple Sec.",
+  },
+  campari: {
+    type: "Bitterlikør",
+    note: "Rød bitterlikør til Negroni m.m. – bruges ren fra flaske.",
+  },
+
+  // SIRUPPER
+  sukkersirup: {
+    type: "Sirup (1:1)",
+    note: "1 del sukker + 1 del vand. Rør eller varm let til sukkeret er opløst.",
+  },
+  "rig sukkersirup": {
+    type: "Sirup (2:1)",
+    note: "2 dele sukker + 1 del vand – sødere og tykkere, holder længere i køleskab.",
+  },
+  "simple sirup": {
+    type: "Sirup (1:1)",
+    note: "Samme som sukkersirup: 1 del sukker + 1 del vand.",
+  },
+
+  // SALINE / SALTOPLØSNING
+  "saline 1:4": {
+    type: "Saline (saltopløsning)",
+    note: "1 del fint salt + 4 dele vand. Bruges i dråber til at runde smagen.",
+  },
+
+  // CITRUS / JUICE
+  citronsaft: {
+    type: "Citrus (juice)",
+    note: "Bedst friskpresset – men du kan bruge færdig citronsaft i en snæver vending.",
+  },
+  limesaft: {
+    type: "Citrus (juice)",
+    note: "Bør være friskpresset for bedste resultat (smagen falder hurtigt).",
+  },
+
+  // KATEGORIER / “FAMILIER”
+  gin: {
+    type: "Spiritus (gin)",
+    note: "Vælg en tør gin til klassiske cocktails. London Dry fungerer næsten altid.",
+  },
+  vodka: {
+    type: "Spiritus (vodka)",
+    note: "Neutral base – brug en ren standardvodka, den behøver ikke være meget dyr.",
+  },
+  bourbon: {
+    type: "Spiritus (whiskey)",
+    note: "Sødlig amerikansk whiskey – fx til Old Fashioned og Whiskey Sour.",
+  },
+  "rye whiskey": {
+    type: "Spiritus (whiskey)",
+    note: "Rye giver mere krydderi og “bid” end bourbon i fx Manhattan og Old Fashioned.",
+  },
+
+  "hvid rom": {
+    type: "Spiritus (rom, lys)",
+    note: "Let og ren rom – fx Havana Club 3, Plantation 3 Stars eller Bacardi Superior.",
+  },
+  "lys rom": {
+    type: "Spiritus (rom, lys)",
+    note: "Samme kategori som hvid rom – bruges i Mojito, Daiquiri m.fl.",
+  },
+  "mørk rom": {
+    type: "Spiritus (rom, mørk/lagret)",
+    note: "Lagret rom med dybere karamel- og fadnoter – fx Appleton Estate, Diplomatico.",
+  },
+  "sød vermouth": {
+    type: "Forstærket vin (rød vermouth)",
+    note: "Sød, urtet vin – fx Carpano Antica, Martini Rosso, Cocchi Vermouth di Torino.",
+  },
+  kaffelikør: {
+    type: "Likør (kaffe)",
+    note: "Kaffe- og sukkersød likør – fx Kahlúa, Tia Maria, Mr. Black.",
+  },
+  amaretto: {
+    type: "Likør (mandel)",
+    note: "Sød mandellikør – klassisk eksempel: Disaronno Originale.",
+  },
+  aperol: {
+    type: "Aperitif (bitterlikør)",
+    note: "Lys, bitterorange-likør med lav alkohol – brugt i Aperol Spritz.",
+  },
+  cognac: {
+    type: "Brandy (fransk)",
+    note: "Destilleret vin fra Cognac – vælg VS eller VSOP til cocktails som Sidecar.",
+  },
+  "créme de cassis": {
+    type: "Likør (solbær)",
+    note: "Sød, mørk bærlikør – klassisk i Kir og El Diablo.",
+  },
+  "crème de mure": {
+    type: "Likør (brombær)",
+    note: "Sød brombærlikør – bruges i Bramble og lignende bærdrinks.",
+  },
+  "crème de violette": {
+    type: "Likør (viol)",
+    note: "Floralt violet-likør, nøgleingrediens i Aviation – fx The Bitter Truth.",
+  },
+  galliano: {
+    type: "Likør (vanilje/urtelikør)",
+    note: "Italiensk, sød likør med vanilje og urter – kendt fra Harvey Wallbanger.",
+  },
+  kirsebærlikør: {
+    type: "Likør (kirsebær)",
+    note: "Frugtlikør med kirsebær – fx Cherry Heering eller Luxardo Cherry Sangue Morlacco.",
+  },
+  pisco: {
+    type: "Brandy (peruviansk/chilensk)",
+    note: "Druedestillat fra Andes-regionen – base i Pisco Sour og El Capitán.",
+  },
+
+  /* === BITTERS & AROMATISKE === */
+  "angostura bitters": {
+    type: "Bitter",
+    note: "Aromatisk bitter i små dråber – klassisk i Old Fashioned, Manhattan m.fl.",
+  },
+  olivenlage: {
+    type: "Smagsgiver (lage)",
+    note: "Brug væsken fra olivenglas til Dirty Martini – 0,5–1 cl pr. drink.",
+  },
+
+  /* === SIRUPPER === */
+  demerarasirup: {
+    type: "Sirup (2:1 demerara)",
+    note: "Lavet af mørkt rørsukker – 2 dele demerarasukker + 1 del varmt vand.",
+  },
+  honningsirup: {
+    type: "Sirup (honning)",
+    note: "1 del honning + 1 del varmt vand – gør honning nemmere at blande i cocktails.",
+  },
+
+  /* === SODAVAND & MIXERS === */
+  sodavand: {
+    type: "Mixer (danskvand)",
+    note: "Almindeligt kulsyreholdigt vand uden smag – ikke Sprite eller tonic.",
+  },
+  tonic: {
+    type: "Mixer (tonicvand)",
+    note: "Kininholdigt vand – vælg tør tonic til klassisk G&T, fx Fever-Tree eller Schweppes.",
+  },
+};
+
+// Hjælper til at slå metadata op uafhængigt af store/små bogstaver m.m.
+function getIngredientMeta(name) {
+  const key = (name || "").toLowerCase().replace(/\s+/g, " ").trim();
+  return ingredientMeta[key] || null;
+}
+
 // init
 init();
 
@@ -347,8 +505,18 @@ function renderShoppingList(map) {
   const tbody = document.createElement("tbody");
 
   rows.forEach(({ name, count }) => {
+    const meta = getIngredientMeta(name);
+
     const tr = document.createElement("tr");
-    tr.innerHTML = `<td>${name}</td>` + `<td class="qty">${count} ${count === 1 ? "drink" : "drinks"}</td>`;
+
+    // venstre kolonne: navn + evt. ekstra info
+    let leftHtml = `<div>${name}</div>`;
+    if (meta) {
+      leftHtml += `<div class="ing-meta">` + (meta.type ? `<span class="ing-tag">${meta.type}</span>` : "") + (meta.note ? `<span class="ing-note">${meta.note}</span>` : "") + `</div>`;
+    }
+
+    tr.innerHTML = `<td>${leftHtml}</td>` + `<td class="qty">${count} ${count === 1 ? "drink" : "drinks"}</td>`;
+
     tbody.appendChild(tr);
   });
 

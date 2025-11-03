@@ -206,7 +206,7 @@ function openModal(idx) {
 }
 
 function renderModalContent(item) {
-  const { titel = "Uden titel", glastype = "—", garnish = "—", ingredienser = [], fremgangsmåde: steps = [], billede = "" } = item;
+  const { titel = "Uden titel", glastype = "—", garnish = "—", ingredienser = [], versioner = [], fremgangsmåde: steps = [], billede = "" } = item;
 
   const frag = document.createDocumentFragment();
 
@@ -226,25 +226,62 @@ function renderModalContent(item) {
   }
   frag.append(hero);
 
-  // ingredienser
-  frag.append(el("h3", {}, "Ingredienser"));
-  const ingBox = el("div", { class: "ingredients" });
-  if (ingredienser.length) {
-    ingredienser.forEach((r) => ingBox.appendChild(ingredientRow(r)));
+  // ==== INGREDIENSER / VERSIONER ====
+  if (Array.isArray(versioner) && versioner.length) {
+    frag.append(el("h3", {}, "Versioner"));
+
+    const grid = el("div", { class: "version-grid" });
+
+    versioner.forEach((v) => {
+      const { navn = "Version", beskrivelse = "", ingredienser: vIngs = [] } = v;
+
+      const card = el("div", { class: "version-card" });
+      card.append(el("h4", {}, navn));
+
+      if (beskrivelse) {
+        card.append(el("p", { class: "version-desc" }, beskrivelse));
+      }
+
+      const ingBox = el("div", { class: "ingredients" });
+      if (Array.isArray(vIngs) && vIngs.length) {
+        vIngs.forEach((r) => ingBox.appendChild(ingredientRow(r)));
+      } else if (ingredienser.length) {
+        // fallback: brug hoved-listen, hvis versionen ikke har egen
+        ingredienser.forEach((r) => ingBox.appendChild(ingredientRow(r)));
+      } else {
+        const r = el("div", { class: "ing-row" });
+        r.append(el("div", { class: "measure" }, "—"), el("div", { class: "ing-name" }, "Se fremgangsmåden."));
+        ingBox.appendChild(r);
+      }
+
+      card.append(ingBox);
+      grid.append(card);
+    });
+
+    frag.append(grid);
   } else {
-    const r = el("div", { class: "ing-row" });
-    r.append(el("div", { class: "measure" }, "—"), el("div", { class: "ing-name" }, "Se fremgangsmåden."));
-    ingBox.appendChild(r);
+    // klassisk fallback: én ingrediensliste som før
+    frag.append(el("h3", {}, "Ingredienser"));
+    const ingBox = el("div", { class: "ingredients" });
+    if (ingredienser.length) {
+      ingredienser.forEach((r) => ingBox.appendChild(ingredientRow(r)));
+    } else {
+      const r = el("div", { class: "ing-row" });
+      r.append(el("div", { class: "measure" }, "—"), el("div", { class: "ing-name" }, "Se fremgangsmåden."));
+      ingBox.appendChild(r);
+    }
+    frag.append(ingBox);
   }
-  frag.append(ingBox);
 
-  // fremgangsmåde
-  frag.append(el("h3", {}, "Fremgangsmåde"));
-  const stepsList = el("ol", { class: "steps" });
-  (Array.isArray(steps) ? steps : [String(steps)]).forEach((s) => stepsList.appendChild(el("li", {}, s)));
-  frag.append(stepsList);
+  // FREMGANGSMÅDE (fælles for alle versioner)
+  if (steps && (Array.isArray(steps) ? steps.length : String(steps).trim())) {
+    frag.append(el("h3", {}, "Fremgangsmåde"));
+    const stepsList = el("ol", { class: "steps" });
+    (Array.isArray(steps) ? steps : [String(steps)]).forEach((s) => stepsList.appendChild(el("li", {}, s)));
+    frag.append(stepsList);
+  }
 
-  // lille hjælpetekst
+  // lille hjælpetekst nederst
   frag.append(el("div", { class: "modal-footer" }, el("div", { class: "helper" }, viewUnit === "cl" ? "Tip: Skift til oz for US-mål" : "Tip: Skift til cl for metriske mål")));
 
   return frag;
@@ -253,6 +290,7 @@ function renderModalContent(item) {
 /* ---------- Indkøbsliste: brugstælling ---------- */
 
 // buildUsage: hvor mange drinks bruger hver ingrediens (ingen mængder)
+// Nu kigger vi både på drink.ingredienser og drink.versioner[].ingredienser
 function buildUsage(list) {
   const norm = (s) => (s || "").toLowerCase().replace(/\s+/g, " ").trim();
 
@@ -260,7 +298,9 @@ function buildUsage(list) {
 
   list.forEach((drink) => {
     const seenInThisDrink = new Set();
-    (drink.ingredienser || []).forEach((row) => {
+
+    // helper til at håndtere én række
+    const handleRow = (row) => {
       const raw = row?.ingrediens || "";
       const key = norm(raw);
       if (!key || seenInThisDrink.has(key)) return;
@@ -272,6 +312,14 @@ function buildUsage(list) {
       } else {
         map.get(key).count += 1;
       }
+    };
+
+    // hoved-ingredienser
+    (drink.ingredienser || []).forEach(handleRow);
+
+    // ingredienser i hver version
+    (drink.versioner || []).forEach((v) => {
+      (v.ingredienser || []).forEach(handleRow);
     });
   });
 

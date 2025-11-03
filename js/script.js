@@ -85,7 +85,6 @@ const ingredientMeta = {
     type: "Spiritus (whiskey)",
     note: "Rye giver mere krydderi og “bid” end bourbon i fx Manhattan og Old Fashioned.",
   },
-
   "hvid rom": {
     type: "Spiritus (rom, lys)",
     note: "Let og ren rom – fx Havana Club 3, Plantation 3 Stars eller Bacardi Superior.",
@@ -141,6 +140,10 @@ const ingredientMeta = {
   pisco: {
     type: "Brandy (peruviansk/chilensk)",
     note: "Druedestillat fra Andes-regionen – base i Pisco Sour og El Capitán.",
+  },
+  slåengin: {
+    type: "Likør (frugtgin)",
+    note: "Gin infuseret med slåenbær – sød, syrlig og mørkerød. Typisk 25–30 % alkohol.",
   },
 
   /* === BITTERS & AROMATISKE === */

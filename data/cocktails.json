@@ -1,26 +1,89 @@
 [
   {
     "titel": "Old Fashioned",
-    "glastype": "Old Fashioned",
-    "garnish": "Appelsinskal og kirsebær (valgfrit)",
+    "glastype": "Rocks glass",
+    "garnish": "Appelsinskal og evt. kirsebær",
     "ingredienser": [
-      { "mængde": 6, "enhed": "cl", "ingrediens": "bourbon eller rye" },
-      { "mængde": 1, "enhed": "cl", "ingrediens": "sukkersirup" },
-      { "mængde": 3, "enhed": "dash", "ingrediens": "Angostura bitters" }
+      { "mængde": 6, "enhed": "cl", "ingrediens": "bourbon eller rye whiskey" },
+      { "mængde": 0.5, "enhed": "cl", "ingrediens": "sukkersirup" },
+      { "mængde": 2, "enhed": "dash", "ingrediens": "Angostura bitters" }
     ],
-    "fremgangsmåde": ["Rør alt med is til koldt.", "Si over stor is i lowball.", "Garnér med appelsinskal (og evt. kirsebær)."],
+    "versioner": [
+      {
+        "navn": "Klassisk Old Fashioned",
+        "beskrivelse": "Minimalistisk whiskey-cocktail med bitters og en anelse sukker.",
+        "ingredienser": [
+          { "mængde": 6, "enhed": "cl", "ingrediens": "bourbon eller rye whiskey" },
+          { "mængde": 0.5, "enhed": "cl", "ingrediens": "sukkersirup" },
+          { "mængde": 2, "enhed": "dash", "ingrediens": "Angostura bitters" }
+        ]
+      },
+      {
+        "navn": "Orange Old Fashioned",
+        "beskrivelse": "Lidt mere citrus og rundhed med appelsin og orange bitters.",
+        "ingredienser": [
+          { "mængde": 6, "enhed": "cl", "ingrediens": "bourbon" },
+          { "mængde": 0.5, "enhed": "cl", "ingrediens": "sukkersirup" },
+          { "mængde": 1, "enhed": "dash", "ingrediens": "Angostura bitters" },
+          { "mængde": 1, "enhed": "dash", "ingrediens": "orange bitters" },
+          { "mængde": 1, "enhed": "stk", "ingrediens": "appelsinskal til at presse over", "valgfri": true }
+        ]
+      },
+      {
+        "navn": "Rum Old Fashioned",
+        "beskrivelse": "Samme struktur, men med mørk rom i stedet for whiskey.",
+        "ingredienser": [
+          { "mængde": 6, "enhed": "cl", "ingrediens": "mørk rom (fx aged rum)" },
+          { "mængde": 0.5, "enhed": "cl", "ingrediens": "demerarasirup" },
+          { "mængde": 2, "enhed": "dash", "ingrediens": "Angostura bitters" }
+        ]
+      }
+    ],
+    "fremgangsmåde": ["Rør alle ingredienser med is i et røreglas indtil godt afkølet.", "Si over en stor isterning i et rocks-glas.", "Garnér med en bred strimmel appelsinskal og evt. et cocktailkirsebær."],
     "billede": "img/oldfashioned.png"
   },
   {
-    "titel": "Dry Martini",
-    "glastype": "Martini / Nick & Nora",
-    "garnish": "Citronzest eller oliven",
+    "titel": "Martini",
+    "glastype": "Martini glass",
+    "garnish": "Citron-twist eller oliven",
     "ingredienser": [
       { "mængde": 6, "enhed": "cl", "ingrediens": "gin" },
       { "mængde": 1, "enhed": "cl", "ingrediens": "tør vermouth" }
     ],
-    "fremgangsmåde": ["Rør med is til meget koldt.", "Si i afkølet glas.", "Garnér med twist eller oliven."],
-    "billede": "img/drymartini.png"
+    "versioner": [
+      {
+        "navn": "Dry Martini",
+        "beskrivelse": "Klassisk og tør – fokus på gin og en anelse vermouth.",
+        "ingredienser": [
+          { "mængde": 6, "enhed": "cl", "ingrediens": "gin" },
+          { "mængde": 1, "enhed": "cl", "ingrediens": "tør vermouth" }
+        ]
+      },
+      {
+        "navn": "Wet Martini",
+        "beskrivelse": "Mere vermouth giver en blødere og mere aromatisk martini.",
+        "ingredienser": [
+          { "mængde": 5, "enhed": "cl", "ingrediens": "gin" },
+          { "mængde": 3, "enhed": "cl", "ingrediens": "tør vermouth" }
+        ]
+      },
+      {
+        "navn": "Dirty Martini",
+        "beskrivelse": "Til oliven-elskere – olivenlage giver saltet, umami-præget martini.",
+        "ingredienser": [
+          { "mængde": 6, "enhed": "cl", "ingrediens": "gin eller vodka" },
+          { "mængde": 1, "enhed": "cl", "ingrediens": "tør vermouth" },
+          { "mængde": 1, "enhed": "cl", "ingrediens": "olivenlage" }
+        ]
+      }
+    ],
+    "fremgangsmåde": [
+      "Rør ingredienserne med is i et røreglas indtil godt kolde.",
+      "Smag til med mere eller mindre vermouth alt efter type.",
+      "Si i et afkølet martini- eller cocktailglas.",
+      "Garnér med enten citron-twist (citrusagtig) eller oliven (mere umami)."
+    ],
+    "billede": "img/martini.png"
   },
   {
     "titel": "Manhattan",
@@ -43,32 +106,126 @@
       { "mængde": 3, "enhed": "cl", "ingrediens": "limesaft" },
       { "mængde": 2, "enhed": "cl", "ingrediens": "sukkersirup" }
     ],
-    "fremgangsmåde": ["Shake hårdt med is.", "Dobbelt-si i afkølet coupe.", "Garnér."],
+    "versioner": [
+      {
+        "navn": "Klassisk",
+        "beskrivelse": "Den lige-ud-ad-landevejen balance mellem rom, lime og sukker.",
+        "ingredienser": [
+          { "mængde": 6, "enhed": "cl", "ingrediens": "hvid rom" },
+          { "mængde": 3, "enhed": "cl", "ingrediens": "limesaft" },
+          { "mængde": 2, "enhed": "cl", "ingrediens": "sukkersirup" }
+        ]
+      },
+      {
+        "navn": "Hemingway",
+        "beskrivelse": "Mere tør, med grapefrugt og maraschino – lidt skarpere stil.",
+        "ingredienser": [
+          { "mængde": 5, "enhed": "cl", "ingrediens": "hvid rom" },
+          { "mængde": 2, "enhed": "cl", "ingrediens": "limesaft" },
+          { "mængde": 1.5, "enhed": "cl", "ingrediens": "grapefrugtsaft" },
+          { "mængde": 1.5, "enhed": "cl", "ingrediens": "maraschino-likør" }
+        ]
+      },
+      {
+        "navn": "Frozen",
+        "beskrivelse": "Blend med is – lidt mere feriestemning og lidt mindre punch.",
+        "ingredienser": [
+          { "mængde": 6, "enhed": "cl", "ingrediens": "hvid rom" },
+          { "mængde": 3, "enhed": "cl", "ingrediens": "limesaft" },
+          { "mængde": 2, "enhed": "cl", "ingrediens": "sukkersirup" },
+          { "mængde": 1, "enhed": "kop", "ingrediens": "knust is" }
+        ]
+      }
+    ],
+    "fremgangsmåde": ["Shake alle ingredienser med is.", "Dobbelt-si i afkølet coupe.", "Garnér med limehjul."],
     "billede": ""
   },
   {
     "titel": "Margarita",
     "glastype": "Coupe",
-    "garnish": "Saltkant og limeskive",
+    "garnish": "Limeskive eller saltkant",
     "ingredienser": [
       { "mængde": 5, "enhed": "cl", "ingrediens": "tequila blanco" },
-      { "mængde": 2, "enhed": "cl", "ingrediens": "triple sec" },
-      { "mængde": 2, "enhed": "cl", "ingrediens": "limesaft" }
+      { "mængde": 3, "enhed": "cl", "ingrediens": "frisk limesaft" },
+      { "mængde": 2, "enhed": "cl", "ingrediens": "triple sec (Cointreau e.l.)" }
     ],
-    "fremgangsmåde": ["Saltrim glas (valgfrit).", "Shake alle ingredienser med is, dobbelt-si i afkølet glas.", "Garnér."],
-    "billede": ""
+    "versioner": [
+      {
+        "navn": "Klassisk Margarita",
+        "beskrivelse": "Tequila, lime og orange-likør i perfekt syre/sødme-balance.",
+        "ingredienser": [
+          { "mængde": 5, "enhed": "cl", "ingrediens": "tequila blanco" },
+          { "mængde": 3, "enhed": "cl", "ingrediens": "frisk limesaft" },
+          { "mængde": 2, "enhed": "cl", "ingrediens": "triple sec (Cointreau e.l.)" }
+        ]
+      },
+      {
+        "navn": "Tommy's Margarita",
+        "beskrivelse": "Mere agave, ingen orange-likør – ren og lidt mindre sød.",
+        "ingredienser": [
+          { "mængde": 6, "enhed": "cl", "ingrediens": "tequila blanco" },
+          { "mængde": 3, "enhed": "cl", "ingrediens": "frisk limesaft" },
+          { "mængde": 2, "enhed": "cl", "ingrediens": "agavesirup" }
+        ]
+      },
+      {
+        "navn": "Frozen Margarita",
+        "beskrivelse": "Blendet med is – mere ferieagtig, mindre intens.",
+        "ingredienser": [
+          { "mængde": 5, "enhed": "cl", "ingrediens": "tequila blanco" },
+          { "mængde": 3, "enhed": "cl", "ingrediens": "frisk limesaft" },
+          { "mængde": 2, "enhed": "cl", "ingrediens": "triple sec (Cointreau e.l.)" },
+          { "mængde": 1, "enhed": "dl", "ingrediens": "knust is" }
+        ]
+      }
+    ],
+    "fremgangsmåde": ["Fugt glaskanten og rim med salt, hvis ønsket.", "Shake alle ingredienser hårdt med is.", "Dobbelt-si i et afkølet coupe- eller margaritaglas.", "Garnér med en limeskive eller -båd."],
+    "billede": "img/cocktails/margarita.jpg"
   },
   {
     "titel": "Negroni",
-    "glastype": "Old Fashioned",
+    "glastype": "Rocks glass",
     "garnish": "Appelsinskal",
     "ingredienser": [
       { "mængde": 3, "enhed": "cl", "ingrediens": "gin" },
       { "mængde": 3, "enhed": "cl", "ingrediens": "Campari" },
       { "mængde": 3, "enhed": "cl", "ingrediens": "sød vermouth" }
     ],
-    "fremgangsmåde": ["Rør direkte i glas med is eller i røreglas og si over is.", "Garnér med appelsinskal."],
-    "billede": ""
+    "versioner": [
+      {
+        "navn": "Klassisk Negroni",
+        "beskrivelse": "Lige dele gin, Campari og sød vermouth – bitter, sød og urtet.",
+        "ingredienser": [
+          { "mængde": 3, "enhed": "cl", "ingrediens": "gin" },
+          { "mængde": 3, "enhed": "cl", "ingrediens": "Campari" },
+          { "mængde": 3, "enhed": "cl", "ingrediens": "sød vermouth" }
+        ]
+      },
+      {
+        "navn": "Boulevardier",
+        "beskrivelse": "Whiskey i stedet for gin – varmere og mere fyldig.",
+        "ingredienser": [
+          { "mængde": 3, "enhed": "cl", "ingrediens": "bourbon eller rye" },
+          { "mængde": 3, "enhed": "cl", "ingrediens": "Campari" },
+          { "mængde": 3, "enhed": "cl", "ingrediens": "sød vermouth" }
+        ]
+      },
+      {
+        "navn": "White Negroni",
+        "beskrivelse": "Lys, mere floral version – stadig bitter, men lettere i udtrykket.",
+        "ingredienser": [
+          { "mængde": 4, "enhed": "cl", "ingrediens": "gin" },
+          { "mængde": 3, "enhed": "cl", "ingrediens": "Suze eller anden hvid bitterlikør" },
+          { "mængde": 3, "enhed": "cl", "ingrediens": "hvid vermouth" }
+        ]
+      }
+    ],
+    "fremgangsmåde": [
+      "Rør alle ingredienser med is i et røreglas, indtil drinken er godt kold og let fortyndet.",
+      "Si over friske isterninger i et rocks-glas.",
+      "Garnér med en bred strimmel appelsinskal, gerne presset over drinken for at frigive olier."
+    ],
+    "billede": "img/cocktails/negroni.jpg"
   },
   {
     "titel": "Whisky Sour",

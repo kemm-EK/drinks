@@ -199,6 +199,53 @@ main {
   cursor: pointer;
 }
 
+/* === VERSIONER AF EN DRINK (3 kolonner) === */
+.version-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+@media (max-width: 900px) {
+  .version-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (max-width: 600px) {
+  .version-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.version-card {
+  border: 1px solid var(--ring);
+  border-radius: 12px;
+  padding: 8px 10px;
+  background: #181b24;
+  display: grid;
+  gap: 6px;
+}
+
+.version-card h4 {
+  margin: 0;
+  font-size: 14px;
+}
+
+.version-desc {
+  margin: 0;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+/* ingredienser inde i en version */
+.version-card .ingredients {
+  margin-top: 4px;
+}
+.version-card .ing-row {
+  grid-template-columns: var(--measure-w) 1fr;
+}
+
 /* Mindre billede i opskrift-modal */
 .modal-hero {
   height: 220px;

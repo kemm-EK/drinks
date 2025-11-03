@@ -40,7 +40,7 @@
       }
     ],
     "fremgangsmåde": ["Rør alle ingredienser med is i et røreglas indtil godt afkølet.", "Si over en stor isterning i et rocks-glas.", "Garnér med en bred strimmel appelsinskal og evt. et cocktailkirsebær."],
-    "billede": "img/oldfashioned.png"
+    "billede": "img/ai/oldfashioned.png"
   },
   {
     "titel": "Martini",
@@ -83,7 +83,7 @@
       "Si i et afkølet martini- eller cocktailglas.",
       "Garnér med enten citron-twist (citrusagtig) eller oliven (mere umami)."
     ],
-    "billede": "img/martini.png"
+    "billede": "img/ai/martini.png"
   },
   {
     "titel": "Manhattan",
@@ -95,7 +95,7 @@
       { "mængde": 2, "enhed": "dash", "ingrediens": "Angostura bitters" }
     ],
     "fremgangsmåde": ["Rør med is og si i afkølet coupe.", "Garnér med kirsebær."],
-    "billede": "img/manhatten.png"
+    "billede": "img/ai/manhatten.png"
   },
   {
     "titel": "Daiquiri",
@@ -138,7 +138,7 @@
       }
     ],
     "fremgangsmåde": ["Shake alle ingredienser med is.", "Dobbelt-si i afkølet coupe.", "Garnér med limehjul."],
-    "billede": ""
+    "billede": "img/ai/daiquiri.png"
   },
   {
     "titel": "Margarita",
@@ -180,7 +180,7 @@
       }
     ],
     "fremgangsmåde": ["Fugt glaskanten og rim med salt, hvis ønsket.", "Shake alle ingredienser hårdt med is.", "Dobbelt-si i et afkølet coupe- eller margaritaglas.", "Garnér med en limeskive eller -båd."],
-    "billede": "img/cocktails/margarita.jpg"
+    "billede": "img/ai/margarita.png"
   },
   {
     "titel": "Negroni",
@@ -225,7 +225,7 @@
       "Si over friske isterninger i et rocks-glas.",
       "Garnér med en bred strimmel appelsinskal, gerne presset over drinken for at frigive olier."
     ],
-    "billede": "img/cocktails/negroni.jpg"
+    "billede": "img/ai/negroni.png"
   },
   {
     "titel": "Whisky Sour",
@@ -238,7 +238,7 @@
       { "mængde": 2, "enhed": "cl", "ingrediens": "æggehvide", "valgfri": true }
     ],
     "fremgangsmåde": ["Dry shake uden is, tilsæt is og shake igen.", "Si over frisk is.", "Garnér."],
-    "billede": ""
+    "billede": "img/ai/whiskysour.png"
   },
   {
     "titel": "Mojito",
@@ -252,7 +252,7 @@
       { "mængde": 8, "enhed": "cl", "ingrediens": "sodavand", "note": "top" }
     ],
     "fremgangsmåde": ["Muddle mynte let med sirup og lime i glas.", "Tilsæt rom og is; top med sodavand.", "Rør kort og garnér."],
-    "billede": ""
+    "billede": "img/ai/mojito.png"
   },
   {
     "titel": "Cosmopolitan",
@@ -265,7 +265,7 @@
       { "mængde": 1, "enhed": "cl", "ingrediens": "limesaft" }
     ],
     "fremgangsmåde": ["Shake hårdt med is.", "Dobbelt-si i afkølet coupe.", "Garnér."],
-    "billede": ""
+    "billede": "img/ai/cosmopolitan.png"
   },
   {
     "titel": "Moscow Mule",
@@ -277,7 +277,7 @@
       { "mængde": 10, "enhed": "cl", "ingrediens": "ginger beer", "note": "top" }
     ],
     "fremgangsmåde": ["Hæld vodka og lime i krus med is.", "Top med ginger beer, rør let.", "Garnér."],
-    "billede": ""
+    "billede": "img/ai/moscowmule.png"
   },
   {
     "titel": "Tom Collins",
@@ -290,7 +290,7 @@
       { "mængde": 8, "enhed": "cl", "ingrediens": "sodavand", "note": "top" }
     ],
     "fremgangsmåde": ["Shake gin, citron og sirup; si i isfyldt glas.", "Top med sodavand og garnér."],
-    "billede": ""
+    "billede": "img/ai/tomcollins.png"
   },
   {
     "titel": "Gin & Tonic",
@@ -301,7 +301,7 @@
       { "mængde": 12, "enhed": "cl", "ingrediens": "tonic", "note": "top" }
     ],
     "fremgangsmåde": ["Fyld glas med is, hæld gin i, top med tonic.", "Rør let og garnér."],
-    "billede": ""
+    "billede": "img/ai/gin&tonic.png"
   },
   {
     "titel": "Pisco Sour",
@@ -958,5 +958,54 @@
     ],
     "fremgangsmåde": ["Byg i glas med is, rør kort.", "Garnér med citrus."],
     "billede": ""
+  },
+  {
+    "titel": "Sloe Gin Fizz",
+    "glastype": "Highball",
+    "garnish": "Citronhjul",
+    "ingredienser": [
+      { "mængde": 5, "enhed": "cl", "ingrediens": "slåengin" },
+      { "mængde": 3, "enhed": "cl", "ingrediens": "frisk citronsaft" },
+      { "mængde": 2, "enhed": "cl", "ingrediens": "sukkersirup" },
+      { "mængde": 6, "enhed": "cl", "ingrediens": "sodavand" }
+    ],
+    "fremgangsmåde": ["Ryst slåengin, citronsaft og sirup med is.", "Si over is i et højt glas.", "Top med sodavand og rør forsigtigt.", "Garnér med en citronskive."],
+    "billede": "img/cocktails/sloe-gin-fizz.jpg"
+  },
+  {
+    "titel": "Charlie Chaplin",
+    "glastype": "Coupe",
+    "garnish": "Ingen eller tørret abrikos",
+    "ingredienser": [
+      { "mængde": 3, "enhed": "cl", "ingrediens": "slåengin" },
+      { "mængde": 3, "enhed": "cl", "ingrediens": "abrikoslikør" },
+      { "mængde": 3, "enhed": "cl", "ingrediens": "frisk limesaft" }
+    ],
+    "fremgangsmåde": ["Ryst alle ingredienser med is.", "Si i et afkølet coupeglas.", "Server uden pynt eller med en lille tørret frugt."],
+    "billede": "img/cocktails/charlie-chaplin.jpg"
+  },
+  {
+    "titel": "Blackthorn (Sloe Gin)",
+    "glastype": "Coupe",
+    "garnish": "Citron-twist",
+    "ingredienser": [
+      { "mængde": 5, "enhed": "cl", "ingrediens": "slåengin" },
+      { "mængde": 2.5, "enhed": "cl", "ingrediens": "tør vermouth" },
+      { "mængde": 2, "enhed": "dash", "ingrediens": "orange bitters" }
+    ],
+    "fremgangsmåde": ["Rør alle ingredienser med is i et røreglas.", "Si i et afkølet coupeglas.", "Garnér med en citron-twist."],
+    "billede": "img/cocktails/blackthorn-sloe.jpg"
+  },
+  {
+    "titel": "Sloe Negroni",
+    "glastype": "Rocks glass",
+    "garnish": "Appelsinskal",
+    "ingredienser": [
+      { "mængde": 3, "enhed": "cl", "ingrediens": "slåengin" },
+      { "mængde": 3, "enhed": "cl", "ingrediens": "Campari" },
+      { "mængde": 3, "enhed": "cl", "ingrediens": "sød vermouth" }
+    ],
+    "fremgangsmåde": ["Rør ingredienser med is og si over is i et lavt glas.", "Garnér med en bred strimmel appelsinskal."],
+    "billede": "img/cocktails/sloe-negroni.jpg"
   }
 ]

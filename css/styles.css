@@ -376,6 +376,27 @@ main {
   color: var(--muted);
   font-weight: 600;
 }
+.ing-meta {
+  margin-top: 2px;
+  font-size: 12px;
+  color: var(--muted);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 6px;
+}
+
+.ing-tag {
+  border: 1px solid var(--ring);
+  border-radius: 999px;
+  padding: 1px 6px;
+  font-size: 11px;
+  text-transform: none;
+}
+
+.ing-note {
+  font-size: 12px;
+}
+
 .qty {
   font-variant-numeric: tabular-nums;
   font-weight: 700;

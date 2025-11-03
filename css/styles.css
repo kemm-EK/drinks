@@ -8,16 +8,9 @@
   --shadow: 0 6px 30px rgba(0, 0, 0, 0.28);
   --radius: 16px;
   --gap: 16px;
-
-  --measure-w: 92px; /* kolonnebredde til mål */
-
-  --card-bg: #f5cbb9;
-  --card-txt: #2f2626;
+  --measure-w: 92px;
 }
-@font-face {
-  font-family: "rubik";
-  src: url(../font/Rubik-VariableFont_wght.woff2);
-}
+
 * {
   box-sizing: border-box;
 }
@@ -25,12 +18,11 @@ html,
 body {
   height: 100%;
 }
-
 body {
   margin: 0;
   background: radial-gradient(1200px 800px at 10% -10%, #151821 0, var(--bg) 70%);
   color: var(--ink);
-  font: 16px/1.55 "rubik", ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial;
+  font: 16px/1.55 ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial;
 }
 
 .site-header {
@@ -39,7 +31,6 @@ body {
 }
 .site-header h1 {
   margin: 0 0 6px;
-  letter-spacing: 0.3px;
   font-size: clamp(28px, 4vw, 44px);
 }
 .sub {
@@ -61,6 +52,8 @@ body {
   border: 1px solid var(--ring);
   border-radius: 12px;
   padding: 10px 12px;
+}
+.input {
   min-width: min(360px, 90vw);
 }
 .select {
@@ -71,7 +64,6 @@ body {
   align-items: center;
   gap: 8px;
   color: var(--muted);
-  user-select: none;
 }
 .btn {
   appearance: none;
@@ -80,9 +72,7 @@ body {
   border: 1px solid var(--accent);
   border-radius: 12px;
   padding: 10px 12px;
-  font: inherit;
   cursor: pointer;
-  transition: transform 0.12s ease, background 0.12s ease, color 0.12s ease;
 }
 .btn.secondary {
   background: transparent;
@@ -93,76 +83,150 @@ body {
 }
 
 main {
-  max-width: 1100px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 16px 20px 20px;
 }
 
-.cards {
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--gap);
-  align-items: stretch;
+/* ====== KOMPAKT GRID (5–6 pr. række, 4–5 rækker) ====== */
+.cards.grid {
+  display: grid;
+  gap: 12px;
+  /* 6 pr. række ≥ 1200px, 5 pr. række ≥ 980px, falder pænt ned derunder */
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+}
+@media (max-width: 1199px) {
+  .cards.grid {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+}
+@media (max-width: 980px) {
+  .cards.grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+@media (max-width: 760px) {
+  .cards.grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+@media (max-width: 560px) {
+  .cards.grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
-.card {
+.card-mini {
+  position: relative;
   background: linear-gradient(180deg, #191d26 0%, var(--card) 100%);
   border: 1px solid var(--ring);
-  border-radius: var(--radius);
-  box-shadow: var(--shadow);
-  width: clamp(280px, 31%, 340px);
-  display: flex;
-  flex-direction: column;
+  border-radius: 14px;
   overflow: hidden;
+  box-shadow: var(--shadow);
+  height: 150px; /* ~5–6 pr. række på almindelige skærme */
+  display: grid;
+  grid-template-rows: 1fr auto;
   transition: transform 0.12s ease, box-shadow 0.12s ease, border-color 0.12s ease;
+  cursor: pointer;
 }
-.card:hover {
+.card-mini:hover {
   transform: translateY(-2px);
   border-color: #334;
   box-shadow: 0 10px 36px rgba(0, 0, 0, 0.35);
 }
 
-.card.compact .card-body {
-  padding-block: 12px;
-}
-.card.compact .ingredients {
-  font-size: 12px;
-}
-.card.compact .steps {
-  display: none;
-} /* skjul fremgangsmåde i kompakt visning */
-
-.card-figure {
-  aspect-ratio: 16 / 10;
+.card-mini .thumb {
   background: #0c0f14;
   display: grid;
   place-items: center;
-  border-bottom: 1px solid var(--ring);
+  overflow: hidden;
 }
-.card-figure img {
+.card-mini .thumb img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
 }
-.card-figure .placeholder {
+.card-mini .thumb .ph {
   color: var(--muted);
-  font-size: 13px;
-  opacity: 0.9;
+  font-size: 12px;
+  padding: 6px;
+  text-align: center;
 }
 
-.card-body {
-  padding: 16px;
+.card-mini .title {
+  padding: 8px 10px;
+  font-size: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border-top: 1px solid var(--ring);
+  color: #e0dcdc;
+}
+
+/* Modal kompakt højde (som aftalt tidligere) */
+.modal {
+  width: min(760px, 94vw);
+  max-height: 90dvh;
+  overflow-y: auto;
+  background: linear-gradient(180deg, #1b1f29 0%, #151921 100%);
+  color: var(--ink);
+  border: 1px solid #3a4150;
+  border-radius: 18px;
+  padding: 0;
+  box-shadow: 0 40px 120px rgba(0, 0, 0, 0.6);
+}
+.modal::backdrop {
+  background: rgba(6, 10, 16, 0.65);
+  backdrop-filter: blur(2px);
+}
+.modal-content {
+  padding: 18px 20px 24px;
   display: grid;
-  gap: 10px;
+  gap: 12px;
+  overflow-x: hidden;
+}
+.modal-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  border: 1px solid var(--ring);
+  background: #12151c;
+  color: var(--ink);
+  border-radius: 999px;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
 }
 
-.card-title {
-  margin: 0;
-  font-size: 18px;
-  letter-spacing: 0.2px;
+/* Mindre billede i opskrift-modal */
+.modal-hero {
+  height: 220px;
+  background: #0c0f14;
+  border: 1px solid var(--ring);
+  border-radius: 12px;
+  overflow: hidden;
+}
+.modal-hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+@media (max-width: 600px) {
+  .modal-hero {
+    height: 160px;
+  }
 }
 
+/* på små skærme: endnu lavere billede */
+@media (max-width: 600px) {
+  .modal-hero {
+    height: 160px;
+  }
+}
+
+/* indhold inde i modal (genbrug fra tidligere) */
 .meta {
   display: flex;
   flex-wrap: wrap;
@@ -175,14 +239,15 @@ main {
   border-radius: 999px;
   padding: 4px 10px;
 }
+.modal h2 {
+  margin: 0;
+  font-size: 22px;
+}
 
+/* ingredienser */
 .ingredients {
   display: grid;
   gap: 6px;
-  color: var(--card-txt);
-  font-size: 12px;
-  background-color: var(--card-bg);
-  box-shadow: 2px 2px 4px rgba(255 255 255 0.2);
 }
 .ing-row {
   display: grid;
@@ -193,16 +258,14 @@ main {
 .measure {
   font-variant-numeric: tabular-nums;
   font-weight: 700;
-  padding: 1px 5px;
-  background: var(--card-bg);
-  /* border: 1px dashed #2a3340; */
-  /* border-radius: 8px; */
-  justify-self: start;
-  min-width: var(--measure-w);
+  padding: 2px 8px;
+  background: #12151c;
+  border: 1px dashed #2a3340;
+  border-radius: 8px;
   text-align: center;
 }
 .ing-name {
-  color: var(--card-txt);
+  color: var(--ink);
 }
 .ing-optional {
   color: var(--muted);
@@ -222,27 +285,25 @@ main {
   margin: 4px 0;
 }
 
-.card-footer {
-  margin-top: auto;
-  padding: 12px 16px 16px;
+.modal-footer {
   display: flex;
-  gap: 8px;
   justify-content: space-between;
   align-items: center;
+  gap: 8px;
 }
 .helper {
   color: var(--muted);
   font-size: 12px;
 }
 
+/* generelt */
 .site-footer {
-  max-width: 1100px;
+  max-width: 1200px;
   margin: 6px auto 40px;
   padding: 0 20px;
   color: var(--muted);
   text-align: right;
 }
-
 .visually-hidden {
   position: absolute !important;
   height: 1px;
@@ -250,4 +311,222 @@ main {
   overflow: hidden;
   clip: rect(1px, 1px, 1px, 1px);
   white-space: nowrap;
+}
+
+/* Indkøbsliste – enkel tabel */
+.list-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 15px;
+}
+.list-table th,
+.list-table td {
+  border-bottom: 1px solid var(--ring);
+  padding: 8px 6px;
+  text-align: left;
+}
+.list-table th {
+  color: var(--muted);
+  font-weight: 600;
+}
+.qty {
+  font-variant-numeric: tabular-nums;
+  font-weight: 700;
+}
+.cat {
+  color: var(--muted);
+  font-size: 12px;
+}
+.list-toolbar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.list-toolbar select {
+  background: #12151c;
+  color: var(--ink);
+  border: 1px solid var(--ring);
+  border-radius: 10px;
+  padding: 6px 8px;
+  margin-left: 6px;
+  min-width: 180px;
+}
+
+/* Indkøbsliste – tabel uden mængde-enheder */
+.list-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 15px;
+}
+.list-table th,
+.list-table td {
+  border-bottom: 1px solid var(--ring);
+  padding: 8px 6px;
+  text-align: left;
+}
+.list-table th {
+  color: var(--muted);
+  font-weight: 600;
+}
+.qty {
+  font-variant-numeric: tabular-nums;
+  font-weight: 700;
+}
+.info-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 6px;
+}
+.info-list li {
+  padding: 6px 0;
+  border-bottom: 1px solid var(--ring);
+  line-height: 1.4;
+}
+.info-list strong {
+  color: var(--ink);
+  font-weight: 600;
+  margin-right: 4px;
+}
+/* === BAR-TERM GRID === */
+#termSearch {
+  margin-bottom: 14px;
+  width: 100%;
+  padding: 10px;
+  background: #12151c;
+  border: 1px solid var(--ring);
+  border-radius: 10px;
+  color: var(--ink);
+}
+
+/* .term-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 14px;
+}
+
+.term-card {
+  background: #191d25;
+  border: 1px solid #2a2f3a;
+  border-radius: 12px;
+  overflow: hidden;
+  padding: 8px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.term-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.term-card img {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.25s ease;
+}
+
+.term-card:hover img {
+  transform: scale(1.1);
+} */
+
+/* === GRID TIL TERMER, BARUDSTYR OG GLAS === */
+
+/* alle grids deler layout */
+.term-grid,
+.tool-grid,
+.glass-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 14px;
+}
+
+/* alle kort deler stil */
+.term-card,
+.tool-card,
+.glass-card {
+  background: #191d25;
+  border: 1px solid #2a2f3a;
+  border-radius: 12px;
+  overflow: hidden;
+  padding: 8px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.term-card:hover,
+.tool-card:hover,
+.glass-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+/* billeder, der bliver større ved hover */
+.term-card img,
+.tool-card img,
+.glass-card img {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.25s ease;
+}
+
+.term-card:hover img,
+.tool-card:hover img,
+.glass-card:hover img {
+  transform: scale(1.1);
+}
+
+/* tekst-delen inde i kortet */
+.info-text {
+  margin-top: 6px;
+}
+
+.info-text h3 {
+  margin: 0 0 4px;
+  font-size: 1.1rem;
+  color: var(--ink);
+}
+
+.info-text p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--muted);
+  line-height: 1.3;
+}
+
+/* søgefeltet til termerne */
+#termSearch {
+  margin-bottom: 14px;
+  width: 100%;
+  padding: 10px;
+  background: #12151c;
+  border: 1px solid var(--ring);
+  border-radius: 10px;
+  color: var(--ink);
+}
+
+.term-info {
+  margin-top: 6px;
+}
+
+.term-info h3 {
+  margin: 0 0 4px;
+  font-size: 1.1rem;
+  color: var(--ink);
+}
+
+.term-info p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--muted);
+  line-height: 1.3;
 }

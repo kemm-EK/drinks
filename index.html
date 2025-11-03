@@ -3,13 +3,13 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Cocktailkort</title>
-    <link rel="stylesheet" href="css/styles.css" />
+    <title>Cocktails</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header class="site-header">
       <h1>Cocktails</h1>
-      <p class="sub">Hentet fra JSON – med tydelige mål</p>
+      <p class="sub">Kompakt grid – klik på en drink for detaljer</p>
 
       <div class="toolbar" role="region" aria-label="Filtre og visning">
         <input id="q" class="input" type="search" placeholder="Søg titel, ingrediens, glas, garnish…" />
@@ -17,22 +17,363 @@
           <option value="">Alle glastyper</option>
         </select>
         <button id="unitToggle" class="btn secondary" type="button" aria-pressed="false" title="Skift enheder">Vis i oz</button>
-        <label class="chk">
-          <input id="compact" type="checkbox" />
-          <span>Kompakt visning</span>
-        </label>
+
+        <!-- Top-links til popovers -->
+        <a id="openList" class="btn" href="#" role="button">Indkøbsliste</a>
+        <a id="openTerms" class="btn" href="#" role="button">Termer</a>
+        <a id="openTools" class="btn" href="#" role="button">Barudstyr</a>
+        <a id="openGlasses" class="btn" href="#" role="button">Glastyper</a>
       </div>
     </header>
 
     <main>
       <div id="status" aria-live="polite" class="visually-hidden"></div>
-      <section id="cards" class="cards" aria-label="Cocktailkort"></section>
+      <section id="cards" class="cards grid" aria-label="Cocktailkort"></section>
     </main>
 
     <footer class="site-footer">
       <small>&copy; <span id="year"></span> Din Bar</small>
     </footer>
 
-    <script src="js/script.js" defer></script>
+    <!-- Modal: Opskrift / cocktaildetaljer -->
+    <dialog id="recipeDialog" class="modal" aria-label="Cocktaildetaljer">
+      <button class="modal-close" data-close aria-label="Luk">✕</button>
+      <article id="modalContent" class="modal-content">
+        <!-- Fyldes dynamisk af app.js -->
+      </article>
+    </dialog>
+
+    <!-- Modal: Indkøbsliste -->
+    <dialog id="listDialog" class="modal" aria-label="Indkøbsliste">
+      <button class="modal-close" data-close aria-label="Luk">✕</button>
+      <article class="modal-content">
+        <h2>Indkøbsliste</h2>
+        <div class="list-toolbar">
+          <label>
+            Sortér:
+            <select id="listSort">
+              <option value="most">Mest nødvendige</option>
+              <option value="alpha">Alfabetisk</option>
+            </select>
+          </label>
+        </div>
+        <p class="helper">Viser hvor mange cocktails hver ingrediens bruges i (ingen mængder).</p>
+        <div id="listContainer"></div>
+      </article>
+    </dialog>
+
+    <!-- Modal: Bar-termer (ordbog) -->
+    <dialog id="termsDialog" class="modal" aria-label="Bar-termer">
+      <button class="modal-close" data-close aria-label="Luk">✕</button>
+      <article class="modal-content">
+        <h2>Bar-termer</h2>
+
+        <!-- Søgefelt til termer -->
+        <input id="termSearch" type="search" class="input" placeholder="Søg term..." />
+
+        <!-- Term-grid med små kort (du kan tilføje/flere ændre efter behov) -->
+        <div id="termGrid" class="term-grid">
+          <div class="term-card">
+            <img src="img/terms/shake.jpg" alt="Shake" />
+            <div class="info-text">
+              <h3>Shake</h3>
+              <p>Ryst ingredienser med is i en shaker for at blande og køle drinken.</p>
+            </div>
+          </div>
+
+          <div class="term-card">
+            <img src="img/terms/stir.jpg" alt="Stir" />
+            <div class="info-text">
+              <h3>Stir</h3>
+              <p>Rør ingredienser med is i et røreglas – giver klare, kolde drinks.</p>
+            </div>
+          </div>
+
+          <div class="term-card">
+            <img src="img/terms/build.jpg" alt="Build" />
+            <div class="info-text">
+              <h3>Build</h3>
+              <p>Hæld ingredienserne direkte i glasset, ofte over is, uden at shake.</p>
+            </div>
+          </div>
+
+          <div class="term-card">
+            <img src="img/terms/muddle.jpg" alt="Muddle" />
+            <div class="info-text">
+              <h3>Muddle</h3>
+              <p>Mas forsigtigt urter eller frugt i bunden af glasset for at frigive aroma.</p>
+            </div>
+          </div>
+
+          <div class="term-card">
+            <img src="img/terms/rim.jpg" alt="Rim" />
+            <div class="info-text">
+              <h3>Rim</h3>
+              <p>Fugt glaskanten og dyp den i sukker, salt eller krydderier.</p>
+            </div>
+          </div>
+
+          <div class="term-card">
+            <img src="img/terms/float.jpg" alt="Float" />
+            <div class="info-text">
+              <h3>Float</h3>
+              <p>Hæld forsigtigt en ingrediens ovenpå, så den danner et lag.</p>
+            </div>
+          </div>
+
+          <div class="term-card">
+            <img src="img/terms/dash.jpg" alt="Dash" />
+            <div class="info-text">
+              <h3>Dash</h3>
+              <p>Et par dråber bitters eller anden koncentreret smag.</p>
+            </div>
+          </div>
+
+          <div class="term-card">
+            <img src="img/terms/dryshake.jpg" alt="Dry shake" />
+            <div class="info-text">
+              <h3>Dry shake</h3>
+              <p>Ryst uden is for at skabe skum – typisk i drinks med æggehvide.</p>
+            </div>
+          </div>
+
+          <div class="term-card">
+            <img src="img/terms/rinse.jpg" alt="Rinse" />
+            <div class="info-text">
+              <h3>Rinse</h3>
+              <p>Skyl glasset med en smule spiritus (fx absint) for duft og smag.</p>
+            </div>
+          </div>
+
+          <div class="term-card">
+            <img src="img/terms/mocktail.jpg" alt="Mocktail" />
+            <div class="info-text">
+              <h3>Mocktail</h3>
+              <p>En alkoholfri cocktail lavet med samme teknikker som klassiske drinks.</p>
+            </div>
+          </div>
+        </div>
+      </article>
+    </dialog>
+
+    <!-- Modal: Barudstyr -->
+    <dialog id="toolsDialog" class="modal" aria-label="Barudstyr">
+      <button class="modal-close" data-close aria-label="Luk">✕</button>
+      <article class="modal-content">
+        <h2>Barudstyr</h2>
+
+        <div id="toolsGrid" class="tool-grid">
+          <div class="tool-card">
+            <img src="img/tools/shaker.jpg" alt="Shaker" />
+            <div class="info-text">
+              <h3>Shaker</h3>
+              <p>Til at ryste cocktails med is og hurtigt køle og blande ingredienser.</p>
+            </div>
+          </div>
+
+          <div class="tool-card">
+            <img src="img/tools/jigger.jpg" alt="Jigger" />
+            <div class="info-text">
+              <h3>Jigger</h3>
+              <p>Målebæger, typisk 2 og 4 cl, til præcise mål.</p>
+            </div>
+          </div>
+
+          <div class="tool-card">
+            <img src="img/tools/strainer.jpg" alt="Strainer" />
+            <div class="info-text">
+              <h3>Strainer</h3>
+              <p>Si der holder is og frugt tilbage, når du hælder fra shaker eller røreglas.</p>
+            </div>
+          </div>
+
+          <div class="tool-card">
+            <img src="img/tools/finestrainer.jpg" alt="Fine strainer" />
+            <div class="info-text">
+              <h3>Fine strainer</h3>
+              <p>Finmasket si, der fanger små iskrystaller og frugtrester.</p>
+            </div>
+          </div>
+
+          <div class="tool-card">
+            <img src="img/tools/muddler.jpg" alt="Muddler" />
+            <div class="info-text">
+              <h3>Muddler</h3>
+              <p>Stød til at mase urter og frugt i glasset, fx til Mojito og Caipirinha.</p>
+            </div>
+          </div>
+
+          <div class="tool-card">
+            <img src="img/tools/barspoon.jpg" alt="Barske" />
+            <div class="info-text">
+              <h3>Bar spoon</h3>
+              <p>Lang ske til at røre drinks og måle små mængder (ca. 5 ml).</p>
+            </div>
+          </div>
+
+          <div class="tool-card">
+            <img src="img/tools/mixingglass.jpg" alt="Røreglas" />
+            <div class="info-text">
+              <h3>Mixing glass</h3>
+              <p>Røreglas til fx Martini og Negroni, der ikke skal shakes.</p>
+            </div>
+          </div>
+
+          <div class="tool-card">
+            <img src="img/tools/icetools.jpg" alt="Isudstyr" />
+            <div class="info-text">
+              <h3>Isudstyr</h3>
+              <p>Is-tang, isske og evt. forme til store isterninger eller kugler.</p>
+            </div>
+          </div>
+
+          <div class="tool-card">
+            <img src="img/tools/peeler.jpg" alt="Peeler" />
+            <div class="info-text">
+              <h3>Peeler</h3>
+              <p>Til at lave citrus-twists og dekorativ pynt.</p>
+            </div>
+          </div>
+
+          <div class="tool-card">
+            <img src="img/tools/rimmer.jpg" alt="Rimmer" />
+            <div class="info-text">
+              <h3>Rimmer</h3>
+              <p>Skål eller tallerken til sukker- og saltkant på glas.</p>
+            </div>
+          </div>
+        </div>
+      </article>
+    </dialog>
+
+    <!-- Modal: Glastyper med 3 små billeder pr. glas -->
+    <dialog id="glassesDialog" class="modal" aria-label="Glastyper">
+      <button class="modal-close" data-close aria-label="Luk">✕</button>
+      <article class="modal-content">
+        <h2>Glastyper</h2>
+        <p class="helper">Eksempler på forskellige varianter af de mest brugte glas.</p>
+
+        <div id="glassesGrid" class="glass-grid">
+          <!-- ROCKS -->
+          <div class="glass-card">
+            <div class="glass-images">
+              <img src="img/glasses/rocks1.jpg" alt="Rocks glass variant 1" />
+              <img src="img/glasses/rocks2.jpg" alt="Rocks glass variant 2" />
+              <img src="img/glasses/rocks3.jpg" alt="Rocks glass variant 3" />
+            </div>
+            <div class="info-text">
+              <h3>Rocks glass</h3>
+              <p>Lavt, tungt glas til drinks “on the rocks” – fx Old Fashioned og Negroni.</p>
+            </div>
+          </div>
+
+          <!-- HIGHBALL -->
+          <div class="glass-card">
+            <div class="glass-images">
+              <img src="img/glasses/highball1.jpg" alt="Highball glass variant 1" />
+              <img src="img/glasses/highball2.jpg" alt="Highball glass variant 2" />
+              <img src="img/glasses/highball3.jpg" alt="Highball glass variant 3" />
+            </div>
+            <div class="info-text">
+              <h3>Highball</h3>
+              <p>Højt glas til longdrinks – fx Gin &amp; Tonic, Mojito og whisky-soda.</p>
+            </div>
+          </div>
+
+          <!-- COUPE -->
+          <div class="glass-card">
+            <div class="glass-images">
+              <img src="img/glasses/coupe1.jpg" alt="Coupe glass variant 1" />
+              <img src="img/glasses/coupe2.jpg" alt="Coupe glass variant 2" />
+              <img src="img/glasses/coupe3.jpg" alt="Coupe glass variant 3" />
+            </div>
+            <div class="info-text">
+              <h3>Coupe</h3>
+              <p>Lavt, rundt glas til sours og klassiske cocktails uden is i glasset.</p>
+            </div>
+          </div>
+
+          <!-- MARTINI -->
+          <div class="glass-card">
+            <div class="glass-images">
+              <img src="img/glasses/martini1.jpg" alt="Martini glass variant 1" />
+              <img src="img/glasses/martini2.jpg" alt="Martini glass variant 2" />
+              <img src="img/glasses/martini3.jpg" alt="Martini glass variant 3" />
+            </div>
+            <div class="info-text">
+              <h3>Martini</h3>
+              <p>Klassisk V-form – ofte lidt mere “spids” og dramatisk end coupe.</p>
+            </div>
+          </div>
+
+          <!-- COLLINS -->
+          <div class="glass-card">
+            <div class="glass-images">
+              <img src="img/glasses/collins1.jpg" alt="Collins glass variant 1" />
+              <img src="img/glasses/collins2.jpg" alt="Collins glass variant 2" />
+              <img src="img/glasses/collins3.jpg" alt="Collins glass variant 3" />
+            </div>
+            <div class="info-text">
+              <h3>Collins</h3>
+              <p>Højt og lige glas, typisk smallere end highball – fx Tom Collins.</p>
+            </div>
+          </div>
+
+          <!-- FLUTE -->
+          <div class="glass-card">
+            <div class="glass-images">
+              <img src="img/glasses/flute1.jpg" alt="Flute glass variant 1" />
+              <img src="img/glasses/flute2.jpg" alt="Flute glass variant 2" />
+              <img src="img/glasses/flute3.jpg" alt="Flute glass variant 3" />
+            </div>
+            <div class="info-text">
+              <h3>Flute</h3>
+              <p>Slankt glas til bobler og champagnecocktails som French 75.</p>
+            </div>
+          </div>
+
+          <!-- WINE -->
+          <div class="glass-card">
+            <div class="glass-images">
+              <img src="img/glasses/wine1.jpg" alt="Wine glass variant 1" />
+              <img src="img/glasses/wine2.jpg" alt="Wine glass variant 2" />
+              <img src="img/glasses/wine3.jpg" alt="Wine glass variant 3" />
+            </div>
+            <div class="info-text">
+              <h3>Vinglas</h3>
+              <p>Bruges både til vin, spritzes og aromatiske cocktails over is.</p>
+            </div>
+          </div>
+
+          <!-- SHOT -->
+          <div class="glass-card">
+            <div class="glass-images">
+              <img src="img/glasses/shot1.jpg" alt="Shot glass variant 1" />
+              <img src="img/glasses/shot2.jpg" alt="Shot glass variant 2" />
+              <img src="img/glasses/shot3.jpg" alt="Shot glass variant 3" />
+            </div>
+            <div class="info-text">
+              <h3>Shotglas</h3>
+              <p>Små glas til shots, stærke smagsprøver og små lagdelte drinks.</p>
+            </div>
+          </div>
+
+          <!-- TIKI / HURRICANE -->
+          <div class="glass-card">
+            <div class="glass-images">
+              <img src="img/glasses/tiki1.jpg" alt="Tiki glass variant 1" />
+              <img src="img/glasses/tiki2.jpg" alt="Tiki glass variant 2" />
+              <img src="img/glasses/hurricane1.jpg" alt="Hurricane glass" />
+            </div>
+            <div class="info-text">
+              <h3>Tiki / Hurricane</h3>
+              <p>Store, ofte dekorerede glas til tropiske og tiki-inspirerede cocktails.</p>
+            </div>
+          </div>
+        </div>
+      </article>
+    </dialog>
+
+    <script src="app.js" defer></script>
   </body>
 </html>

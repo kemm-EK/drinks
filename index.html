@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="da">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Cocktailkort</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <h1>Cocktails</h1>
+      <p class="sub">Hentet fra JSON – med tydelige mål</p>
+
+      <div class="toolbar" role="region" aria-label="Filtre og visning">
+        <input id="q" class="input" type="search" placeholder="Søg titel, ingrediens, glas, garnish…" />
+        <select id="glass" class="select" aria-label="Filtrér på glastype">
+          <option value="">Alle glastyper</option>
+        </select>
+        <button id="unitToggle" class="btn secondary" type="button" aria-pressed="false" title="Skift enheder">Vis i oz</button>
+        <label class="chk">
+          <input id="compact" type="checkbox" />
+          <span>Kompakt visning</span>
+        </label>
+      </div>
+    </header>
+
+    <main>
+      <div id="status" aria-live="polite" class="visually-hidden"></div>
+      <section id="cards" class="cards" aria-label="Cocktailkort"></section>
+    </main>
+
+    <footer class="site-footer">
+      <small>&copy; <span id="year"></span> Din Bar</small>
+    </footer>
+
+    <script src="js/script.js" defer></script>
+  </body>
+</html>

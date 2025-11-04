@@ -87,7 +87,7 @@
   },
   {
     "titel": "Manhattan",
-    "glastype": "Coupe",
+    "glastype": "Nick & Nora",
     "garnish": "Koktelkirsebær",
     "ingredienser": [
       { "mængde": 6, "enhed": "cl", "ingrediens": "rye eller bourbon" },
@@ -229,7 +229,7 @@
   },
   {
     "titel": "Whisky Sour",
-    "glastype": "Old Fashioned",
+    "glastype": "Rocks glass",
     "garnish": "Citronzest og/eller kirsebær",
     "ingredienser": [
       { "mængde": 6, "enhed": "cl", "ingrediens": "bourbon" },
@@ -269,7 +269,7 @@
   },
   {
     "titel": "Moscow Mule",
-    "glastype": "Highball / kobberkrus",
+    "glastype": "Copper Mug",
     "garnish": "Limebåd",
     "ingredienser": [
       { "mængde": 5, "enhed": "cl", "ingrediens": "vodka" },
@@ -319,7 +319,7 @@
   },
   {
     "titel": "Mai Tai",
-    "glastype": "Old Fashioned / Tiki",
+    "glastype": "Tiki glass",
     "garnish": "Mynte, lime og evt. ananas",
     "ingredienser": [
       { "mængde": 4, "enhed": "cl", "ingrediens": "mørk rom" },
@@ -357,7 +357,7 @@
   },
   {
     "titel": "Boulevardier",
-    "glastype": "Old Fashioned / Coupe",
+    "glastype": "Rocks glass",
     "garnish": "Appelsintwist",
     "ingredienser": [
       { "mængde": 4.5, "enhed": "cl", "ingrediens": "bourbon eller rye" },
@@ -394,7 +394,7 @@
   },
   {
     "titel": "Sazerac",
-    "glastype": "Old Fashioned",
+    "glastype": "Rocks glass",
     "garnish": "Citronzest",
     "ingredienser": [
       { "mængde": 6, "enhed": "cl", "ingrediens": "rye eller cognac" },
@@ -407,7 +407,7 @@
   },
   {
     "titel": "Mint Julep",
-    "glastype": "Julep/Old Fashioned",
+    "glastype": "Julep cup",
     "garnish": "Stor myntetop",
     "ingredienser": [
       { "mængde": 8, "enhed": "stk", "ingrediens": "mynteblade" },
@@ -420,7 +420,7 @@
   },
   {
     "titel": "Caipirinha",
-    "glastype": "Old Fashioned",
+    "glastype": "Rocks glass",
     "garnish": "Limebåd",
     "ingredienser": [
       { "mængde": 0.5, "enhed": "stk", "ingrediens": "lime i tern" },
@@ -468,7 +468,7 @@
   },
   {
     "titel": "White Russian",
-    "glastype": "Old Fashioned",
+    "glastype": "Rocks glass",
     "garnish": "—",
     "ingredienser": [
       { "mængde": 5, "enhed": "cl", "ingrediens": "vodka" },
@@ -480,7 +480,7 @@
   },
   {
     "titel": "Black Russian",
-    "glastype": "Old Fashioned",
+    "glastype": "Rocks glass",
     "garnish": "—",
     "ingredienser": [
       { "mængde": 5, "enhed": "cl", "ingrediens": "vodka" },
@@ -491,7 +491,7 @@
   },
   {
     "titel": "Piña Colada",
-    "glastype": "Hurricane",
+    "glastype": "Hurricane glass",
     "garnish": "Ananas og kirsebær",
     "ingredienser": [
       { "mængde": 5, "enhed": "cl", "ingrediens": "hvid eller lys rom" },
@@ -503,7 +503,7 @@
   },
   {
     "titel": "Rum Old Fashioned",
-    "glastype": "Old Fashioned",
+    "glastype": "Rocks glass",
     "garnish": "Appelsinskal",
     "ingredienser": [
       { "mængde": 6, "enhed": "cl", "ingrediens": "lagret rom" },
@@ -539,7 +539,7 @@
   },
   {
     "titel": "Aviation",
-    "glastype": "Coupe",
+    "glastype": "Nick & Nora",
     "garnish": "Kirsebær",
     "ingredienser": [
       { "mængde": 5, "enhed": "cl", "ingrediens": "gin" },
@@ -552,7 +552,7 @@
   },
   {
     "titel": "Last Word",
-    "glastype": "Coupe",
+    "glastype": "Nick & Nora",
     "garnish": "Limezest",
     "ingredienser": [
       { "mængde": 2.5, "enhed": "cl", "ingrediens": "gin" },
@@ -565,7 +565,7 @@
   },
   {
     "titel": "Vesper",
-    "glastype": "Martini",
+    "glastype": "Martini glass",
     "garnish": "Citronzest",
     "ingredienser": [
       { "mængde": 6, "enhed": "cl", "ingrediens": "gin" },
@@ -577,7 +577,7 @@
   },
   {
     "titel": "Corpse Reviver #2",
-    "glastype": "Coupe",
+    "glastype": "Nick & Nora",
     "garnish": "Citronzest",
     "ingredienser": [
       { "mængde": 2.5, "enhed": "cl", "ingrediens": "gin" },
@@ -604,7 +604,7 @@
   },
   {
     "titel": "Bramble",
-    "glastype": "Old Fashioned",
+    "glastype": "Rocks glass",
     "garnish": "Brombær og citron",
     "ingredienser": [
       { "mængde": 5, "enhed": "cl", "ingrediens": "gin" },
@@ -617,7 +617,7 @@
   },
   {
     "titel": "Paper Plane",
-    "glastype": "Coupe",
+    "glastype": "Nick & Nora",
     "garnish": "Appelsintwist",
     "ingredienser": [
       { "mængde": 2.5, "enhed": "cl", "ingrediens": "bourbon" },
@@ -630,7 +630,7 @@
   },
   {
     "titel": "Jungle Bird",
-    "glastype": "Old Fashioned / Tiki",
+    "glastype": "Tiki glass",
     "garnish": "Ananas og mynte",
     "ingredienser": [
       { "mængde": 4.5, "enhed": "cl", "ingrediens": "mørk rom" },
@@ -749,7 +749,7 @@
   },
   {
     "titel": "Singapore Sling",
-    "glastype": "Highball / Hurricane",
+    "glastype": "Hurricane glass",
     "garnish": "Ananas og kirsebær",
     "ingredienser": [
       { "mængde": 3, "enhed": "cl", "ingrediens": "gin" },
@@ -766,7 +766,7 @@
   },
   {
     "titel": "Ramos Gin Fizz",
-    "glastype": "Highball uden is",
+    "glastype": "Highball",
     "garnish": "—",
     "ingredienser": [
       { "mængde": 4.5, "enhed": "cl", "ingrediens": "gin" },
@@ -808,7 +808,7 @@
   },
   {
     "titel": "Rob Roy",
-    "glastype": "Coupe",
+    "glastype": "Nick & Nora",
     "garnish": "Kirsebær",
     "ingredienser": [
       { "mængde": 6, "enhed": "cl", "ingrediens": "skotsk whisky" },
@@ -820,7 +820,7 @@
   },
   {
     "titel": "Godfather",
-    "glastype": "Old Fashioned",
+    "glastype": "Rocks glass",
     "garnish": "Appelsinskal (valgfrit)",
     "ingredienser": [
       { "mængde": 4.5, "enhed": "cl", "ingrediens": "scotch" },
@@ -831,7 +831,7 @@
   },
   {
     "titel": "Amaretto Sour",
-    "glastype": "Old Fashioned",
+    "glastype": "Rocks glass",
     "garnish": "Citron og kirsebær",
     "ingredienser": [
       { "mængde": 5, "enhed": "cl", "ingrediens": "amaretto" },
@@ -858,7 +858,7 @@
   },
   {
     "titel": "Caipiroska",
-    "glastype": "Old Fashioned",
+    "glastype": "Rocks glass",
     "garnish": "Limebåd",
     "ingredienser": [
       { "mængde": 0.5, "enhed": "stk", "ingrediens": "lime i tern" },
@@ -911,7 +911,7 @@
   },
   {
     "titel": "Vieux Carré",
-    "glastype": "Old Fashioned",
+    "glastype": "Rocks glass",
     "garnish": "Citron- eller appelsintwist",
     "ingredienser": [
       { "mængde": 3, "enhed": "cl", "ingrediens": "rye" },

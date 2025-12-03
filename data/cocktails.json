@@ -1008,4 +1008,16 @@
     "fremgangsmåde": ["Rør ingredienser med is og si over is i et lavt glas.", "Garnér med en bred strimmel appelsinskal."],
     "billede": "img/cocktails/sloe-negroni.jpg"
   }
+  {
+    "titel": "Asian Ginger Conctail",
+    "glastype": "Martini",
+    "garnish": "Lemon slice",
+    "ingredienser": [
+      { "mængde": 45, "enhed": "ml", "ingrediens": "vodka" },
+      { "mængde": 67.5, "enhed": "ml", "ingrediens": "sake" },
+      { "mængde": 7.5, "enhed": "ml", "ingrediens": "sirup" }
+    ],
+    "fremgangsmåde": ["Mos to skiver frisk ingefær i shaker. Tilføj ingredienser og ryst med is."],
+    "billede": "img/cocktails/sloe-negroni.jpg"
+  }
 ]

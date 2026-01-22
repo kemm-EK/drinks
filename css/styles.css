@@ -607,3 +607,24 @@ main {
   color: var(--muted);
   line-height: 1.3;
 }
+
+/* Responsive footer */
+@media (max-width: 768px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .footer-column h3 {
+    font-size: 13px;
+  }
+
+  .footer-column p {
+    font-size: 12px;
+  }
+
+  .social-links a,
+  .company-links a {
+    font-size: 12px;
+  }
+}

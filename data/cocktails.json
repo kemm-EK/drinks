@@ -4,28 +4,19 @@
     "glastype": "Rocks glass",
     "garnish": "Appelsinskal og evt. kirsebær",
     "ingredienser": [
-      { "mængde": 6, "enhed": "cl", "ingrediens": "bourbon eller rye whiskey" },
-      { "mængde": 0.5, "enhed": "cl", "ingrediens": "sukkersirup" },
-      { "mængde": 2, "enhed": "dash", "ingrediens": "Angostura bitters" }
+      { "mængde": 60, "enhed": "ml", "ingrediens": "Bourbon" },
+      { "mængde": 12.5, "enhed": "ml", "ingrediens": "Sukkersirup" },
+      { "mængde": 3, "enhed": "dash", "ingrediens": "Angostura Aromatic bitters" }
     ],
     "versioner": [
-      {
-        "navn": "Klassisk Old Fashioned",
-        "beskrivelse": "Minimalistisk whiskey-cocktail med bitters og en anelse sukker.",
-        "ingredienser": [
-          { "mængde": 6, "enhed": "cl", "ingrediens": "bourbon eller rye whiskey" },
-          { "mængde": 0.5, "enhed": "cl", "ingrediens": "sukkersirup" },
-          { "mængde": 2, "enhed": "dash", "ingrediens": "Angostura bitters" }
-        ]
-      },
       {
         "navn": "Orange Old Fashioned",
         "beskrivelse": "Lidt mere citrus og rundhed med appelsin og orange bitters.",
         "ingredienser": [
-          { "mængde": 6, "enhed": "cl", "ingrediens": "bourbon" },
-          { "mængde": 0.5, "enhed": "cl", "ingrediens": "sukkersirup" },
-          { "mængde": 1, "enhed": "dash", "ingrediens": "Angostura bitters" },
-          { "mængde": 1, "enhed": "dash", "ingrediens": "orange bitters" },
+          { "mængde": 60, "enhed": "ml", "ingrediens": "Bourbon" },
+          { "mængde": 12.5, "enhed": "ml", "ingrediens": "Sukkersirup" },
+          { "mængde": 1, "enhed": "dash", "ingrediens": "Angostura Aromatic bitters" },
+          { "mængde": 1, "enhed": "dash", "ingrediens": "Orange bitters" },
           { "mængde": 1, "enhed": "stk", "ingrediens": "appelsinskal til at presse over", "valgfri": true }
         ]
       },
@@ -33,9 +24,9 @@
         "navn": "Rum Old Fashioned",
         "beskrivelse": "Samme struktur, men med mørk rom i stedet for whiskey.",
         "ingredienser": [
-          { "mængde": 6, "enhed": "cl", "ingrediens": "mørk rom (fx aged rum)" },
-          { "mængde": 0.5, "enhed": "cl", "ingrediens": "demerarasirup" },
-          { "mængde": 2, "enhed": "dash", "ingrediens": "Angostura bitters" }
+          { "mængde": 60, "enhed": "ml", "ingrediens": "Dark Rum" },
+          { "mængde": 12.5, "enhed": "ml", "ingrediens": "Demerarasirup" },
+          { "mængde": 2, "enhed": "dash", "ingrediens": "Angostura Aromatic bitters" }
         ]
       }
     ],
@@ -47,64 +38,55 @@
     "glastype": "Martini glass",
     "garnish": "Citron-twist eller oliven",
     "ingredienser": [
-      { "mængde": 6, "enhed": "cl", "ingrediens": "gin" },
-      { "mængde": 1, "enhed": "cl", "ingrediens": "tør vermouth" }
+      { "mængde": 60, "enhed": "ml", "ingrediens": "Gin" },
+      { "mængde": 10, "enhed": "ml", "ingrediens": "Dry Vermouth" }
     ],
     "versioner": [
-      {
-        "navn": "Dry Martini",
-        "beskrivelse": "Klassisk og tør – fokus på gin og en anelse vermouth.",
-        "ingredienser": [
-          { "mængde": 6, "enhed": "cl", "ingrediens": "gin" },
-          { "mængde": 1, "enhed": "cl", "ingrediens": "tør vermouth" }
-        ]
-      },
       {
         "navn": "Wet Martini",
         "beskrivelse": "Mere vermouth giver en blødere og mere aromatisk martini.",
         "ingredienser": [
-          { "mængde": 5, "enhed": "cl", "ingrediens": "gin" },
-          { "mængde": 3, "enhed": "cl", "ingrediens": "tør vermouth" }
+          { "mængde": 50, "enhed": "ml", "ingrediens": "Gin" },
+          { "mængde": 30, "enhed": "ml", "ingrediens": "Dry Vermouth" }
         ]
       },
       {
         "navn": "Dirty Martini",
         "beskrivelse": "Til oliven-elskere – olivenlage giver saltet, umami-præget martini.",
         "ingredienser": [
-          { "mængde": 6, "enhed": "cl", "ingrediens": "gin eller vodka" },
-          { "mængde": 1, "enhed": "cl", "ingrediens": "tør vermouth" },
-          { "mængde": 1, "enhed": "cl", "ingrediens": "olivenlage" }
+          { "mængde": 60, "enhed": "ml", "ingrediens": "Vodka" },
+          { "mængde": 12.5, "enhed": "ml", "ingrediens": "Dry Vermouth" },
+          { "mængde": 12.5, "enhed": "ml", "ingrediens": "Olivenlage" }
         ]
       }
     ],
     "fremgangsmåde": [
       "Rør ingredienserne med is i et røreglas indtil godt kolde.",
-      "Smag til med mere eller mindre vermouth alt efter type.",
-      "Si i et afkølet martini- eller cocktailglas.",
-      "Garnér med enten citron-twist (citrusagtig) eller oliven (mere umami)."
+      "Si i et afkølet martiniglas.",
+      "Garnér med oliven."
     ],
     "billede": "img/ai/martini.png"
   },
   {
     "titel": "Manhattan",
     "glastype": "Nick & Nora",
-    "garnish": "Koktelkirsebær",
+    "garnish": "Cocktailkirsebær",
     "ingredienser": [
-      { "mængde": 6, "enhed": "cl", "ingrediens": "rye eller bourbon" },
-      { "mængde": 3, "enhed": "cl", "ingrediens": "sød vermouth" },
-      { "mængde": 2, "enhed": "dash", "ingrediens": "Angostura bitters" }
+      { "mængde": 60, "enhed": "ml", "ingrediens": "Bourbon" },
+      { "mængde": 30, "enhed": "ml", "ingrediens": "Sweet Vermouth" },
+      { "mængde": 2, "enhed": "dash", "ingrediens": "Angostura Aromatic bitters" }
     ],
-    "fremgangsmåde": ["Rør med is og si i afkølet coupe.", "Garnér med kirsebær."],
+    "fremgangsmåde": ["Rør med is og si i afkølet Nick & Nora.", "Garnér med kirsebær."],
     "billede": "img/ai/manhatten.png"
   },
   {
     "titel": "Daiquiri",
     "glastype": "Coupe",
-    "garnish": "Limehjul",
+    "garnish": "Lime wheel",
     "ingredienser": [
-      { "mængde": 6, "enhed": "cl", "ingrediens": "hvid rom" },
-      { "mængde": 3, "enhed": "cl", "ingrediens": "limesaft" },
-      { "mængde": 2, "enhed": "cl", "ingrediens": "sukkersirup" }
+      { "mængde": 60, "enhed": "ml", "ingrediens": "White Rum" },
+      { "mængde": 30, "enhed": "ml", "ingrediens": "Limesaft" },
+      { "mængde": 20, "enhed": "ml", "ingrediens": "Sukkersirup" }
     ],
     "versioner": [
       {

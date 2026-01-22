@@ -705,14 +705,14 @@
     "glastype": "Highball",
     "garnish": "Citronskive",
     "ingredienser": [
-      { "mængde": 1.5, "enhed": "cl", "ingrediens": "vodka" },
-      { "mængde": 1.5, "enhed": "cl", "ingrediens": "gin" },
-      { "mængde": 1.5, "enhed": "cl", "ingrediens": "tequila" },
-      { "mængde": 1.5, "enhed": "cl", "ingrediens": "hvid rom" },
-      { "mængde": 1.5, "enhed": "cl", "ingrediens": "triple sec" },
-      { "mængde": 2, "enhed": "cl", "ingrediens": "citronsaft" },
-      { "mængde": 1.5, "enhed": "cl", "ingrediens": "sukkersirup" },
-      { "mængde": 6, "enhed": "cl", "ingrediens": "cola", "note": "top" }
+      { "mængde": 15, "enhed": "ml", "ingrediens": "vodka" },
+      { "mængde": 15, "enhed": "ml", "ingrediens": "gin" },
+      { "mængde": 15, "enhed": "ml", "ingrediens": "tequila" },
+      { "mængde": 15, "enhed": "ml", "ingrediens": "hvid rom" },
+      { "mængde": 15, "enhed": "ml", "ingrediens": "triple sec" },
+      { "mængde": 20, "enhed": "ml", "ingrediens": "citronsaft" },
+      { "mængde": 15, "enhed": "ml", "ingrediens": "sukkersirup" },
+      { "mængde": 60, "enhed": "ml", "ingrediens": "cola", "note": "top" }
     ],
     "fremgangsmåde": ["Shake alt undtagen cola og si over is.", "Top med cola, rør og garnér."],
     "billede": ""

@@ -4,19 +4,28 @@
     "glastype": "Rocks glass",
     "garnish": "Appelsinskal og evt. kirsebær",
     "ingredienser": [
-      { "mængde": 60, "enhed": "ml", "ingrediens": "Bourbon" },
-      { "mængde": 12.5, "enhed": "ml", "ingrediens": "Sukkersirup" },
-      { "mængde": 3, "enhed": "dash", "ingrediens": "Angostura Aromatic bitters" }
+      { "mængde": 60, "enhed": "ml", "ingrediens": "bourbon" },
+      { "mængde": 12.5, "enhed": "ml", "ingrediens": "sukkersirup" },
+      { "mængde": 3, "enhed": "dash", "ingrediens": "Angostura aromatic bitters" }
     ],
     "versioner": [
+      {
+        "navn": "Klassisk Old Fashioned",
+        "beskrivelse": "Lidt mere citrus og rundhed med appelsin og orange bitters.",
+        "ingredienser": [
+          { "mængde": 60, "enhed": "ml", "ingrediens": "bourbon" },
+          { "mængde": 12.5, "enhed": "ml", "ingrediens": "sukkersirup" },
+          { "mængde": 3, "enhed": "dash", "ingrediens": "Angostura aromatic bitters" }
+        ]
+      },
       {
         "navn": "Orange Old Fashioned",
         "beskrivelse": "Lidt mere citrus og rundhed med appelsin og orange bitters.",
         "ingredienser": [
-          { "mængde": 60, "enhed": "ml", "ingrediens": "Bourbon" },
-          { "mængde": 12.5, "enhed": "ml", "ingrediens": "Sukkersirup" },
-          { "mængde": 1, "enhed": "dash", "ingrediens": "Angostura Aromatic bitters" },
-          { "mængde": 1, "enhed": "dash", "ingrediens": "Orange bitters" },
+          { "mængde": 60, "enhed": "ml", "ingrediens": "bourbon" },
+          { "mængde": 12.5, "enhed": "ml", "ingrediens": "sukkersirup" },
+          { "mængde": 1, "enhed": "dash", "ingrediens": "Angostura aromatic bitters" },
+          { "mængde": 1, "enhed": "dash", "ingrediens": "orange bitters" },
           { "mængde": 1, "enhed": "stk", "ingrediens": "appelsinskal til at presse over", "valgfri": true }
         ]
       },
@@ -24,9 +33,9 @@
         "navn": "Rum Old Fashioned",
         "beskrivelse": "Samme struktur, men med mørk rom i stedet for whiskey.",
         "ingredienser": [
-          { "mængde": 60, "enhed": "ml", "ingrediens": "Dark Rum" },
-          { "mængde": 12.5, "enhed": "ml", "ingrediens": "Demerarasirup" },
-          { "mængde": 2, "enhed": "dash", "ingrediens": "Angostura Aromatic bitters" }
+          { "mængde": 60, "enhed": "ml", "ingrediens": "dark rum" },
+          { "mængde": 12.5, "enhed": "ml", "ingrediens": "demerarasirup" },
+          { "mængde": 2, "enhed": "dash", "ingrediens": "Angostura aromatic bitters" }
         ]
       }
     ],
@@ -38,33 +47,37 @@
     "glastype": "Martini glass",
     "garnish": "Citron-twist eller oliven",
     "ingredienser": [
-      { "mængde": 60, "enhed": "ml", "ingrediens": "Gin" },
-      { "mængde": 10, "enhed": "ml", "ingrediens": "Dry Vermouth" }
+      { "mængde": 60, "enhed": "ml", "ingrediens": "gin" },
+      { "mængde": 10, "enhed": "ml", "ingrediens": "dry vermouth" }
     ],
     "versioner": [
+      {
+        "navn": "Martini",
+        "beskrivelse": "The classic martini.",
+        "ingredienser": [
+          { "mængde": 60, "enhed": "ml", "ingrediens": "gin" },
+          { "mængde": 10, "enhed": "ml", "ingrediens": "dry vermouth" }
+        ]
+      },
       {
         "navn": "Wet Martini",
         "beskrivelse": "Mere vermouth giver en blødere og mere aromatisk martini.",
         "ingredienser": [
-          { "mængde": 50, "enhed": "ml", "ingrediens": "Gin" },
-          { "mængde": 30, "enhed": "ml", "ingrediens": "Dry Vermouth" }
+          { "mængde": 50, "enhed": "ml", "ingrediens": "gin" },
+          { "mængde": 30, "enhed": "ml", "ingrediens": "dry vermouth" }
         ]
       },
       {
         "navn": "Dirty Martini",
         "beskrivelse": "Til oliven-elskere – olivenlage giver saltet, umami-præget martini.",
         "ingredienser": [
-          { "mængde": 60, "enhed": "ml", "ingrediens": "Vodka" },
-          { "mængde": 12.5, "enhed": "ml", "ingrediens": "Dry Vermouth" },
-          { "mængde": 12.5, "enhed": "ml", "ingrediens": "Olivenlage" }
+          { "mængde": 60, "enhed": "ml", "ingrediens": "vodka" },
+          { "mængde": 12.5, "enhed": "ml", "ingrediens": "dry vermouth" },
+          { "mængde": 12.5, "enhed": "ml", "ingrediens": "olivenlage" }
         ]
       }
     ],
-    "fremgangsmåde": [
-      "Rør ingredienserne med is i et røreglas indtil godt kolde.",
-      "Si i et afkølet martiniglas.",
-      "Garnér med oliven."
-    ],
+    "fremgangsmåde": ["Rør ingredienserne med is i et røreglas indtil godt kolde.", "Si i et afkølet martiniglas.", "Garnér med oliven."],
     "billede": "img/ai/martini.png"
   },
   {
@@ -72,9 +85,9 @@
     "glastype": "Nick & Nora",
     "garnish": "Cocktailkirsebær",
     "ingredienser": [
-      { "mængde": 60, "enhed": "ml", "ingrediens": "Bourbon" },
-      { "mængde": 30, "enhed": "ml", "ingrediens": "Sweet Vermouth" },
-      { "mængde": 2, "enhed": "dash", "ingrediens": "Angostura Aromatic bitters" }
+      { "mængde": 60, "enhed": "ml", "ingrediens": "bourbon" },
+      { "mængde": 30, "enhed": "ml", "ingrediens": "sweet vermouth" },
+      { "mængde": 2, "enhed": "dash", "ingrediens": "Angostura aromatic bitters" }
     ],
     "fremgangsmåde": ["Rør med is og si i afkølet Nick & Nora.", "Garnér med kirsebær."],
     "billede": "img/ai/manhatten.png"
@@ -84,38 +97,38 @@
     "glastype": "Coupe",
     "garnish": "Lime wheel",
     "ingredienser": [
-      { "mængde": 60, "enhed": "ml", "ingrediens": "White Rum" },
-      { "mængde": 30, "enhed": "ml", "ingrediens": "Limesaft" },
-      { "mængde": 20, "enhed": "ml", "ingrediens": "Sukkersirup" }
+      { "mængde": 60, "enhed": "ml", "ingrediens": "lys rom" },
+      { "mængde": 30, "enhed": "ml", "ingrediens": "limesaft" },
+      { "mængde": 20, "enhed": "ml", "ingrediens": "sukkersirup" }
     ],
     "versioner": [
       {
         "navn": "Klassisk",
         "beskrivelse": "Den lige-ud-ad-landevejen balance mellem rom, lime og sukker.",
         "ingredienser": [
-          { "mængde": 6, "enhed": "cl", "ingrediens": "hvid rom" },
-          { "mængde": 3, "enhed": "cl", "ingrediens": "limesaft" },
-          { "mængde": 2, "enhed": "cl", "ingrediens": "sukkersirup" }
+          { "mængde": 60, "enhed": "ml", "ingrediens": "hvid rom" },
+          { "mængde": 30, "enhed": "ml", "ingrediens": "limesaft" },
+          { "mængde": 20, "enhed": "ml", "ingrediens": "sukkersirup" }
         ]
       },
       {
         "navn": "Hemingway",
         "beskrivelse": "Mere tør, med grapefrugt og maraschino – lidt skarpere stil.",
         "ingredienser": [
-          { "mængde": 5, "enhed": "cl", "ingrediens": "hvid rom" },
-          { "mængde": 2, "enhed": "cl", "ingrediens": "limesaft" },
-          { "mængde": 1.5, "enhed": "cl", "ingrediens": "grapefrugtsaft" },
-          { "mængde": 1.5, "enhed": "cl", "ingrediens": "maraschino-likør" }
+          { "mængde": 50, "enhed": "ml", "ingrediens": "hvid rom" },
+          { "mængde": 20, "enhed": "ml", "ingrediens": "limesaft" },
+          { "mængde": 15, "enhed": "ml", "ingrediens": "grapefrugtsaft" },
+          { "mængde": 15, "enhed": "ml", "ingrediens": "maraschino-likør" }
         ]
       },
       {
         "navn": "Frozen",
         "beskrivelse": "Blend med is – lidt mere feriestemning og lidt mindre punch.",
         "ingredienser": [
-          { "mængde": 6, "enhed": "cl", "ingrediens": "hvid rom" },
-          { "mængde": 3, "enhed": "cl", "ingrediens": "limesaft" },
-          { "mængde": 2, "enhed": "cl", "ingrediens": "sukkersirup" },
-          { "mængde": 1, "enhed": "kop", "ingrediens": "knust is" }
+          { "mængde": 60, "enhed": "ml", "ingrediens": "hvid rom" },
+          { "mængde": 30, "enhed": "ml", "ingrediens": "limesaft" },
+          { "mængde": 20, "enhed": "ml", "ingrediens": "sukkersirup" },
+          { "mængde": 10, "enhed": "ml", "ingrediens": "knust is" }
         ]
       }
     ],
@@ -127,37 +140,37 @@
     "glastype": "Coupe",
     "garnish": "Limeskive eller saltkant",
     "ingredienser": [
-      { "mængde": 5, "enhed": "cl", "ingrediens": "tequila blanco" },
-      { "mængde": 3, "enhed": "cl", "ingrediens": "frisk limesaft" },
-      { "mængde": 2, "enhed": "cl", "ingrediens": "triple sec (Cointreau e.l.)" }
+      { "mængde": 50, "enhed": "ml", "ingrediens": "tequila blanco" },
+      { "mængde": 30, "enhed": "ml", "ingrediens": "frisk limesaft" },
+      { "mængde": 20, "enhed": "ml", "ingrediens": "triple sec (Cointreau e.l.)" }
     ],
     "versioner": [
       {
         "navn": "Klassisk Margarita",
         "beskrivelse": "Tequila, lime og orange-likør i perfekt syre/sødme-balance.",
         "ingredienser": [
-          { "mængde": 5, "enhed": "cl", "ingrediens": "tequila blanco" },
-          { "mængde": 3, "enhed": "cl", "ingrediens": "frisk limesaft" },
-          { "mængde": 2, "enhed": "cl", "ingrediens": "triple sec (Cointreau e.l.)" }
+          { "mængde": 50, "enhed": "ml", "ingrediens": "tequila blanco" },
+          { "mængde": 30, "enhed": "ml", "ingrediens": "frisk limesaft" },
+          { "mængde": 20, "enhed": "ml", "ingrediens": "triple sec (Cointreau e.l.)" }
         ]
       },
       {
         "navn": "Tommy's Margarita",
         "beskrivelse": "Mere agave, ingen orange-likør – ren og lidt mindre sød.",
         "ingredienser": [
-          { "mængde": 6, "enhed": "cl", "ingrediens": "tequila blanco" },
-          { "mængde": 3, "enhed": "cl", "ingrediens": "frisk limesaft" },
-          { "mængde": 2, "enhed": "cl", "ingrediens": "agavesirup" }
+          { "mængde": 60, "enhed": "ml", "ingrediens": "tequila blanco" },
+          { "mængde": 30, "enhed": "ml", "ingrediens": "frisk limesaft" },
+          { "mængde": 20, "enhed": "ml", "ingrediens": "agavesirup" }
         ]
       },
       {
         "navn": "Frozen Margarita",
         "beskrivelse": "Blendet med is – mere ferieagtig, mindre intens.",
         "ingredienser": [
-          { "mængde": 5, "enhed": "cl", "ingrediens": "tequila blanco" },
-          { "mængde": 3, "enhed": "cl", "ingrediens": "frisk limesaft" },
-          { "mængde": 2, "enhed": "cl", "ingrediens": "triple sec (Cointreau e.l.)" },
-          { "mængde": 1, "enhed": "dl", "ingrediens": "knust is" }
+          { "mængde": 50, "enhed": "ml", "ingrediens": "tequila blanco" },
+          { "mængde": 30, "enhed": "ml", "ingrediens": "frisk limesaft" },
+          { "mængde": 20, "enhed": "ml", "ingrediens": "triple sec (Cointreau e.l.)" },
+          { "mængde": 100, "enhed": "ml", "ingrediens": "knust is" }
         ]
       }
     ],
@@ -169,36 +182,36 @@
     "glastype": "Rocks glass",
     "garnish": "Appelsinskal",
     "ingredienser": [
-      { "mængde": 3, "enhed": "cl", "ingrediens": "gin" },
-      { "mængde": 3, "enhed": "cl", "ingrediens": "Campari" },
-      { "mængde": 3, "enhed": "cl", "ingrediens": "sød vermouth" }
+      { "mængde": 30, "enhed": "ml", "ingrediens": "gin" },
+      { "mængde": 30, "enhed": "ml", "ingrediens": "Campari" },
+      { "mængde": 30, "enhed": "ml", "ingrediens": "sød vermouth" }
     ],
     "versioner": [
       {
         "navn": "Klassisk Negroni",
         "beskrivelse": "Lige dele gin, Campari og sød vermouth – bitter, sød og urtet.",
         "ingredienser": [
-          { "mængde": 3, "enhed": "cl", "ingrediens": "gin" },
-          { "mængde": 3, "enhed": "cl", "ingrediens": "Campari" },
-          { "mængde": 3, "enhed": "cl", "ingrediens": "sød vermouth" }
+          { "mængde": 30, "enhed": "ml", "ingrediens": "gin" },
+          { "mængde": 30, "enhed": "ml", "ingrediens": "Campari" },
+          { "mængde": 30, "enhed": "ml", "ingrediens": "sød vermouth" }
         ]
       },
       {
         "navn": "Boulevardier",
         "beskrivelse": "Whiskey i stedet for gin – varmere og mere fyldig.",
         "ingredienser": [
-          { "mængde": 3, "enhed": "cl", "ingrediens": "bourbon eller rye" },
-          { "mængde": 3, "enhed": "cl", "ingrediens": "Campari" },
-          { "mængde": 3, "enhed": "cl", "ingrediens": "sød vermouth" }
+          { "mængde": 30, "enhed": "ml", "ingrediens": "bourbon eller rye" },
+          { "mængde": 30, "enhed": "ml", "ingrediens": "Campari" },
+          { "mængde": 30, "enhed": "ml", "ingrediens": "sød vermouth" }
         ]
       },
       {
         "navn": "White Negroni",
         "beskrivelse": "Lys, mere floral version – stadig bitter, men lettere i udtrykket.",
         "ingredienser": [
-          { "mængde": 4, "enhed": "cl", "ingrediens": "gin" },
-          { "mængde": 3, "enhed": "cl", "ingrediens": "Suze eller anden hvid bitterlikør" },
-          { "mængde": 3, "enhed": "cl", "ingrediens": "hvid vermouth" }
+          { "mængde": 40, "enhed": "ml", "ingrediens": "gin" },
+          { "mængde": 30, "enhed": "ml", "ingrediens": "Suze eller anden hvid bitterlikør" },
+          { "mængde": 30, "enhed": "ml", "ingrediens": "hvid vermouth" }
         ]
       }
     ],
@@ -214,10 +227,10 @@
     "glastype": "Rocks glass",
     "garnish": "Citronzest og/eller kirsebær",
     "ingredienser": [
-      { "mængde": 6, "enhed": "cl", "ingrediens": "bourbon" },
-      { "mængde": 3, "enhed": "cl", "ingrediens": "citronsaft" },
-      { "mængde": 2, "enhed": "cl", "ingrediens": "sukkersirup" },
-      { "mængde": 2, "enhed": "cl", "ingrediens": "æggehvide", "valgfri": true }
+      { "mængde": 60, "enhed": "ml", "ingrediens": "bourbon" },
+      { "mængde": 30, "enhed": "ml", "ingrediens": "citronsaft" },
+      { "mængde": 20, "enhed": "ml", "ingrediens": "sukkersirup" },
+      { "mængde": 20, "enhed": "ml", "ingrediens": "æggehvide", "valgfri": true }
     ],
     "fremgangsmåde": ["Dry shake uden is, tilsæt is og shake igen.", "Si over frisk is.", "Garnér."],
     "billede": "img/ai/whiskysour.png"
@@ -227,11 +240,11 @@
     "glastype": "Highball",
     "garnish": "Myntetop og limebåd",
     "ingredienser": [
-      { "mængde": 10, "enhed": "stk", "ingrediens": "mynteblade" },
-      { "mængde": 2, "enhed": "cl", "ingrediens": "sukkersirup" },
-      { "mængde": 3, "enhed": "cl", "ingrediens": "limesaft" },
-      { "mængde": 5, "enhed": "cl", "ingrediens": "hvid rom" },
-      { "mængde": 8, "enhed": "cl", "ingrediens": "sodavand", "note": "top" }
+      { "mængde": 100, "enhed": "ml", "ingrediens": "mynteblade" },
+      { "mængde": 20, "enhed": "ml", "ingrediens": "sukkersirup" },
+      { "mængde": 30, "enhed": "ml", "ingrediens": "limesaft" },
+      { "mængde": 50, "enhed": "ml", "ingrediens": "hvid rom" },
+      { "mængde": 80, "enhed": "ml", "ingrediens": "sodavand", "note": "top" }
     ],
     "fremgangsmåde": ["Muddle mynte let med sirup og lime i glas.", "Tilsæt rom og is; top med sodavand.", "Rør kort og garnér."],
     "billede": "img/ai/mojito.png"
@@ -241,10 +254,10 @@
     "glastype": "Coupe",
     "garnish": "Appelsintwist",
     "ingredienser": [
-      { "mængde": 4, "enhed": "cl", "ingrediens": "citronvodka" },
-      { "mængde": 2, "enhed": "cl", "ingrediens": "triple sec" },
-      { "mængde": 3, "enhed": "cl", "ingrediens": "tranebærsaft" },
-      { "mængde": 1, "enhed": "cl", "ingrediens": "limesaft" }
+      { "mængde": 40, "enhed": "ml", "ingrediens": "citronvodka" },
+      { "mængde": 20, "enhed": "ml", "ingrediens": "triple sec" },
+      { "mængde": 30, "enhed": "ml", "ingrediens": "tranebærsaft" },
+      { "mængde": 10, "enhed": "ml", "ingrediens": "limesaft" }
     ],
     "fremgangsmåde": ["Shake hårdt med is.", "Dobbelt-si i afkølet coupe.", "Garnér."],
     "billede": "img/ai/cosmopolitan.png"
@@ -254,9 +267,9 @@
     "glastype": "Copper Mug",
     "garnish": "Limebåd",
     "ingredienser": [
-      { "mængde": 5, "enhed": "cl", "ingrediens": "vodka" },
-      { "mængde": 2, "enhed": "cl", "ingrediens": "limesaft" },
-      { "mængde": 10, "enhed": "cl", "ingrediens": "ginger beer", "note": "top" }
+      { "mængde": 50, "enhed": "ml", "ingrediens": "vodka" },
+      { "mængde": 20, "enhed": "ml", "ingrediens": "limesaft" },
+      { "mængde": 100, "enhed": "ml", "ingrediens": "ginger beer", "note": "top" }
     ],
     "fremgangsmåde": ["Hæld vodka og lime i krus med is.", "Top med ginger beer, rør let.", "Garnér."],
     "billede": "img/ai/moscowmule.png"
@@ -266,10 +279,10 @@
     "glastype": "Collins",
     "garnish": "Citronhjul og kirsebær",
     "ingredienser": [
-      { "mængde": 5, "enhed": "cl", "ingrediens": "gin" },
-      { "mængde": 3, "enhed": "cl", "ingrediens": "citronsaft" },
-      { "mængde": 2, "enhed": "cl", "ingrediens": "sukkersirup" },
-      { "mængde": 8, "enhed": "cl", "ingrediens": "sodavand", "note": "top" }
+      { "mængde": 50, "enhed": "ml", "ingrediens": "gin" },
+      { "mængde": 30, "enhed": "ml", "ingrediens": "citronsaft" },
+      { "mængde": 20, "enhed": "ml", "ingrediens": "sukkersirup" },
+      { "mængde": 80, "enhed": "ml", "ingrediens": "sodavand", "note": "top" }
     ],
     "fremgangsmåde": ["Shake gin, citron og sirup; si i isfyldt glas.", "Top med sodavand og garnér."],
     "billede": "img/ai/tomcollins.png"
@@ -279,8 +292,8 @@
     "glastype": "Highball",
     "garnish": "Limeskive eller citron",
     "ingredienser": [
-      { "mængde": 5, "enhed": "cl", "ingrediens": "gin" },
-      { "mængde": 12, "enhed": "cl", "ingrediens": "tonic", "note": "top" }
+      { "mængde": 50, "enhed": "ml", "ingrediens": "gin" },
+      { "mængde": 120, "enhed": "ml", "ingrediens": "tonic", "note": "top" }
     ],
     "fremgangsmåde": ["Fyld glas med is, hæld gin i, top med tonic.", "Rør let og garnér."],
     "billede": "img/ai/gin&tonic.png"
@@ -290,10 +303,10 @@
     "glastype": "Coupe",
     "garnish": "Angostura-dots",
     "ingredienser": [
-      { "mængde": 6, "enhed": "cl", "ingrediens": "pisco" },
-      { "mængde": 3, "enhed": "cl", "ingrediens": "limesaft" },
-      { "mængde": 2, "enhed": "cl", "ingrediens": "sukkersirup" },
-      { "mængde": 2, "enhed": "cl", "ingrediens": "æggehvide" },
+      { "mængde": 60, "enhed": "ml", "ingrediens": "pisco" },
+      { "mængde": 30, "enhed": "ml", "ingrediens": "limesaft" },
+      { "mængde": 20, "enhed": "ml", "ingrediens": "sukkersirup" },
+      { "mængde": 20, "enhed": "ml", "ingrediens": "æggehvide" },
       { "mængde": 3, "enhed": "dash", "ingrediens": "Angostura bitters", "valgfri": true, "note": "til pynt" }
     ],
     "fremgangsmåde": ["Dry shake, tilsæt is og shake igen.", "Dobbelt-si i coupe.", "Pynt skummet med bitters."],
@@ -304,11 +317,11 @@
     "glastype": "Tiki glass",
     "garnish": "Mynte, lime og evt. ananas",
     "ingredienser": [
-      { "mængde": 4, "enhed": "cl", "ingrediens": "mørk rom" },
-      { "mængde": 2, "enhed": "cl", "ingrediens": "lys rom" },
-      { "mængde": 2, "enhed": "cl", "ingrediens": "limesaft" },
-      { "mængde": 1.5, "enhed": "cl", "ingrediens": "orgeat (mandelsirup)" },
-      { "mængde": 1.5, "enhed": "cl", "ingrediens": "orange curaçao" }
+      { "mængde": 40, "enhed": "ml", "ingrediens": "mørk rom" },
+      { "mængde": 20, "enhed": "ml", "ingrediens": "lys rom" },
+      { "mængde": 20, "enhed": "ml", "ingrediens": "limesaft" },
+      { "mængde": 15, "enhed": "ml", "ingrediens": "orgeat (mandelsirup)" },
+      { "mængde": 15, "enhed": "ml", "ingrediens": "orange curaçao" }
     ],
     "fremgangsmåde": ["Shake med is og si over knust is.", "Garnér generøst."],
     "billede": ""
@@ -318,9 +331,9 @@
     "glastype": "Highball",
     "garnish": "Grapefrugtskive og saltsprøjt",
     "ingredienser": [
-      { "mængde": 5, "enhed": "cl", "ingrediens": "tequila blanco" },
-      { "mængde": 1, "enhed": "cl", "ingrediens": "limesaft" },
-      { "mængde": 12, "enhed": "cl", "ingrediens": "grapefrugt-sodavand", "note": "top" }
+      { "mængde": 50, "enhed": "ml", "ingrediens": "tequila blanco" },
+      { "mængde": 10, "enhed": "ml", "ingrediens": "limesaft" },
+      { "mængde": 120, "enhed": "ml", "ingrediens": "grapefrugt-sodavand", "note": "top" }
     ],
     "fremgangsmåde": ["Saltrim (valgfrit).", "Byg i glas over is, rør kort, garnér."],
     "billede": ""
@@ -330,9 +343,9 @@
     "glastype": "Vinglas",
     "garnish": "Appelsinskive",
     "ingredienser": [
-      { "mængde": 6, "enhed": "cl", "ingrediens": "prosecco" },
-      { "mængde": 4, "enhed": "cl", "ingrediens": "Aperol" },
-      { "mængde": 2, "enhed": "cl", "ingrediens": "sodavand" }
+      { "mængde": 60, "enhed": "ml", "ingrediens": "prosecco" },
+      { "mængde": 40, "enhed": "ml", "ingrediens": "Aperol" },
+      { "mængde": 20, "enhed": "ml", "ingrediens": "sodavand" }
     ],
     "fremgangsmåde": ["Byg i vinglas med is.", "Rør let og garnér."],
     "billede": ""
@@ -342,9 +355,9 @@
     "glastype": "Rocks glass",
     "garnish": "Appelsintwist",
     "ingredienser": [
-      { "mængde": 4.5, "enhed": "cl", "ingrediens": "bourbon eller rye" },
-      { "mængde": 3, "enhed": "cl", "ingrediens": "Campari" },
-      { "mængde": 3, "enhed": "cl", "ingrediens": "sød vermouth" }
+      { "mængde": 45, "enhed": "ml", "ingrediens": "bourbon eller rye" },
+      { "mængde": 30, "enhed": "ml", "ingrediens": "Campari" },
+      { "mængde": 30, "enhed": "ml", "ingrediens": "sød vermouth" }
     ],
     "fremgangsmåde": ["Rør med is; server over stor is eller neat.", "Garnér."],
     "billede": ""
@@ -354,9 +367,9 @@
     "glastype": "Coupe",
     "garnish": "Sukkerkant (valgfrit) og citronzest",
     "ingredienser": [
-      { "mængde": 5, "enhed": "cl", "ingrediens": "cognac" },
-      { "mængde": 2, "enhed": "cl", "ingrediens": "triple sec" },
-      { "mængde": 2, "enhed": "cl", "ingrediens": "citronsaft" }
+      { "mængde": 50, "enhed": "ml", "ingrediens": "cognac" },
+      { "mængde": 20, "enhed": "ml", "ingrediens": "triple sec" },
+      { "mængde": 20, "enhed": "ml", "ingrediens": "citronsaft" }
     ],
     "fremgangsmåde": ["Shake med is; dobbelt-si i afkølet glas.", "Garnér."],
     "billede": ""
@@ -366,10 +379,10 @@
     "glastype": "Flute",
     "garnish": "Citronzest",
     "ingredienser": [
-      { "mængde": 3, "enhed": "cl", "ingrediens": "gin" },
-      { "mængde": 1.5, "enhed": "cl", "ingrediens": "citronsaft" },
-      { "mængde": 1.5, "enhed": "cl", "ingrediens": "sukkersirup" },
-      { "mængde": 6, "enhed": "cl", "ingrediens": "champagne", "note": "top" }
+      { "mængde": 30, "enhed": "ml", "ingrediens": "gin" },
+      { "mængde": 15, "enhed": "ml", "ingrediens": "citronsaft" },
+      { "mængde": 15, "enhed": "ml", "ingrediens": "sukkersirup" },
+      { "mængde": 60, "enhed": "ml", "ingrediens": "champagne", "note": "top" }
     ],
     "fremgangsmåde": ["Shake gin, citron og sirup; si i flute.", "Top med champagne og garnér."],
     "billede": ""
@@ -379,10 +392,10 @@
     "glastype": "Rocks glass",
     "garnish": "Citronzest",
     "ingredienser": [
-      { "mængde": 6, "enhed": "cl", "ingrediens": "rye eller cognac" },
-      { "mængde": 1, "enhed": "cl", "ingrediens": "sukkersirup" },
+      { "mængde": 60, "enhed": "ml", "ingrediens": "rye eller cognac" },
+      { "mængde": 10, "enhed": "ml", "ingrediens": "sukkersirup" },
       { "mængde": 3, "enhed": "dash", "ingrediens": "Peychaud's bitters" },
-      { "mængde": 0.5, "enhed": "cl", "ingrediens": "absint", "note": "glas-skyl" }
+      { "mængde": 5, "enhed": "ml", "ingrediens": "absint", "note": "glas-skyl" }
     ],
     "fremgangsmåde": ["Skyl glas med absint og sæt til side.", "Rør de øvrige ingredienser kolde og si i glasset.", "Garnér med citronzest."],
     "billede": ""
@@ -392,10 +405,10 @@
     "glastype": "Julep cup",
     "garnish": "Stor myntetop",
     "ingredienser": [
-      { "mængde": 8, "enhed": "stk", "ingrediens": "mynteblade" },
-      { "mængde": 1, "enhed": "cl", "ingrediens": "sukkersirup" },
-      { "mængde": 6, "enhed": "cl", "ingrediens": "bourbon" },
-      { "mængde": 1, "enhed": "cl", "ingrediens": "sodavand", "valgfri": true, "note": "stænk" }
+      { "mængde": 80, "enhed": "ml", "ingrediens": "mynteblade" },
+      { "mængde": 10, "enhed": "ml", "ingrediens": "sukkersirup" },
+      { "mængde": 60, "enhed": "ml", "ingrediens": "bourbon" },
+      { "mængde": 10, "enhed": "ml", "ingrediens": "sodavand", "valgfri": true, "note": "stænk" }
     ],
     "fremgangsmåde": ["Muddle mynte let med sirup i kop.", "Fyld knust is og tilsæt bourbon; rør.", "Top med mere is og garnér."],
     "billede": ""
@@ -407,7 +420,7 @@
     "ingredienser": [
       { "mængde": 0.5, "enhed": "stk", "ingrediens": "lime i tern" },
       { "mængde": 2, "enhed": "tsk", "ingrediens": "rørsukker" },
-      { "mængde": 6, "enhed": "cl", "ingrediens": "cachaça" }
+      { "mængde": 60, "enhed": "ml", "ingrediens": "cachaça" }
     ],
     "fremgangsmåde": ["Muddle lime og sukker.", "Tilsæt knust is og cachaça; rør.", "Garnér."],
     "billede": ""
@@ -417,8 +430,8 @@
     "glastype": "Highball",
     "garnish": "Limebåd",
     "ingredienser": [
-      { "mængde": 10, "enhed": "cl", "ingrediens": "ginger beer" },
-      { "mængde": 5, "enhed": "cl", "ingrediens": "mørk rom", "note": "float" }
+      { "mængde": 100, "enhed": "ml", "ingrediens": "ginger beer" },
+      { "mængde": 50, "enhed": "ml", "ingrediens": "mørk rom", "note": "float" }
     ],
     "fremgangsmåde": ["Byg i glas med is; ginger beer først.", "Float rom, klem lime og garnér."],
     "billede": ""
@@ -428,9 +441,9 @@
     "glastype": "Highball",
     "garnish": "Appelsinskive",
     "ingredienser": [
-      { "mængde": 3, "enhed": "cl", "ingrediens": "Campari" },
-      { "mængde": 3, "enhed": "cl", "ingrediens": "sød vermouth" },
-      { "mængde": 8, "enhed": "cl", "ingrediens": "sodavand", "note": "top" }
+      { "mængde": 30, "enhed": "ml", "ingrediens": "Campari" },
+      { "mængde": 30, "enhed": "ml", "ingrediens": "sød vermouth" },
+      { "mængde": 80, "enhed": "ml", "ingrediens": "sodavand", "note": "top" }
     ],
     "fremgangsmåde": ["Byg i glas over is.", "Rør kort og garnér."],
     "billede": ""
@@ -440,10 +453,10 @@
     "glastype": "Coupe",
     "garnish": "3 kaffebønner",
     "ingredienser": [
-      { "mængde": 5, "enhed": "cl", "ingrediens": "vodka" },
-      { "mængde": 3, "enhed": "cl", "ingrediens": "frisk espresso" },
-      { "mængde": 2, "enhed": "cl", "ingrediens": "kaffelikør" },
-      { "mængde": 1, "enhed": "cl", "ingrediens": "sukkersirup" }
+      { "mængde": 50, "enhed": "ml", "ingrediens": "vodka" },
+      { "mængde": 30, "enhed": "ml", "ingrediens": "frisk espresso" },
+      { "mængde": 20, "enhed": "ml", "ingrediens": "kaffelikør" },
+      { "mængde": 10, "enhed": "ml", "ingrediens": "sukkersirup" }
     ],
     "fremgangsmåde": ["Shake meget hårdt med is.", "Dobbelt-si i coupe og pynt."],
     "billede": ""
@@ -453,9 +466,9 @@
     "glastype": "Rocks glass",
     "garnish": "—",
     "ingredienser": [
-      { "mængde": 5, "enhed": "cl", "ingrediens": "vodka" },
-      { "mængde": 3, "enhed": "cl", "ingrediens": "kaffelikør" },
-      { "mængde": 3, "enhed": "cl", "ingrediens": "fløde eller mælk" }
+      { "mængde": 50, "enhed": "ml", "ingrediens": "vodka" },
+      { "mængde": 30, "enhed": "ml", "ingrediens": "kaffelikør" },
+      { "mængde": 30, "enhed": "ml", "ingrediens": "fløde eller mælk" }
     ],
     "fremgangsmåde": ["Byg over is og rør let."],
     "billede": ""
@@ -465,8 +478,8 @@
     "glastype": "Rocks glass",
     "garnish": "—",
     "ingredienser": [
-      { "mængde": 5, "enhed": "cl", "ingrediens": "vodka" },
-      { "mængde": 3, "enhed": "cl", "ingrediens": "kaffelikør" }
+      { "mængde": 50, "enhed": "ml", "ingrediens": "vodka" },
+      { "mængde": 30, "enhed": "ml", "ingrediens": "kaffelikør" }
     ],
     "fremgangsmåde": ["Byg over is og rør kort."],
     "billede": ""
@@ -476,9 +489,9 @@
     "glastype": "Hurricane glass",
     "garnish": "Ananas og kirsebær",
     "ingredienser": [
-      { "mængde": 5, "enhed": "cl", "ingrediens": "hvid eller lys rom" },
-      { "mængde": 9, "enhed": "cl", "ingrediens": "ananasjuice" },
-      { "mængde": 3, "enhed": "cl", "ingrediens": "kokoscreme" }
+      { "mængde": 50, "enhed": "ml", "ingrediens": "hvid eller lys rom" },
+      { "mængde": 90, "enhed": "ml", "ingrediens": "ananasjuice" },
+      { "mængde": 30, "enhed": "ml", "ingrediens": "kokoscreme" }
     ],
     "fremgangsmåde": ["Blend med is til cremet konsistens.", "Hæld i glas og garnér."],
     "billede": ""
@@ -488,8 +501,8 @@
     "glastype": "Rocks glass",
     "garnish": "Appelsinskal",
     "ingredienser": [
-      { "mængde": 6, "enhed": "cl", "ingrediens": "lagret rom" },
-      { "mængde": 1, "enhed": "cl", "ingrediens": "sukkersirup" },
+      { "mængde": 60, "enhed": "ml", "ingrediens": "lagret rom" },
+      { "mængde": 10, "enhed": "ml", "ingrediens": "sukkersirup" },
       { "mængde": 2, "enhed": "dash", "ingrediens": "Angostura bitters" }
     ],
     "fremgangsmåde": ["Rør med is til koldt.", "Si over stor is; garnér."],
@@ -500,9 +513,9 @@
     "glastype": "Coupe",
     "garnish": "Limehjul",
     "ingredienser": [
-      { "mængde": 6, "enhed": "cl", "ingrediens": "gin" },
-      { "mængde": 2.5, "enhed": "cl", "ingrediens": "limesaft" },
-      { "mængde": 2, "enhed": "cl", "ingrediens": "sukkersirup" }
+      { "mængde": 60, "enhed": "ml", "ingrediens": "gin" },
+      { "mængde": 25, "enhed": "ml", "ingrediens": "limesaft" },
+      { "mængde": 20, "enhed": "ml", "ingrediens": "sukkersirup" }
     ],
     "fremgangsmåde": ["Shake med is; dobbelt-si i coupe.", "Garnér."],
     "billede": ""
@@ -512,9 +525,9 @@
     "glastype": "Coupe",
     "garnish": "Citronzest",
     "ingredienser": [
-      { "mængde": 6, "enhed": "cl", "ingrediens": "gin" },
-      { "mængde": 3, "enhed": "cl", "ingrediens": "citronsaft" },
-      { "mængde": 2, "enhed": "cl", "ingrediens": "honningsirup" }
+      { "mængde": 60, "enhed": "ml", "ingrediens": "gin" },
+      { "mængde": 30, "enhed": "ml", "ingrediens": "citronsaft" },
+      { "mængde": 20, "enhed": "ml", "ingrediens": "honningsirup" }
     ],
     "fremgangsmåde": ["Shake med is; dobbelt-si i coupe.", "Garnér."],
     "billede": ""
@@ -524,10 +537,10 @@
     "glastype": "Nick & Nora",
     "garnish": "Kirsebær",
     "ingredienser": [
-      { "mængde": 5, "enhed": "cl", "ingrediens": "gin" },
-      { "mængde": 1.5, "enhed": "cl", "ingrediens": "maraschino-likør" },
-      { "mængde": 1.5, "enhed": "cl", "ingrediens": "citronsaft" },
-      { "mængde": 0.5, "enhed": "cl", "ingrediens": "crème de violette" }
+      { "mængde": 50, "enhed": "ml", "ingrediens": "gin" },
+      { "mængde": 15, "enhed": "ml", "ingrediens": "maraschino-likør" },
+      { "mængde": 15, "enhed": "ml", "ingrediens": "citronsaft" },
+      { "mængde": 5, "enhed": "ml", "ingrediens": "crème de violette" }
     ],
     "fremgangsmåde": ["Shake med is og dobbelt-si.", "Garnér."],
     "billede": ""
@@ -537,10 +550,10 @@
     "glastype": "Nick & Nora",
     "garnish": "Limezest",
     "ingredienser": [
-      { "mængde": 2.5, "enhed": "cl", "ingrediens": "gin" },
-      { "mængde": 2.5, "enhed": "cl", "ingrediens": "grøn Chartreuse" },
-      { "mængde": 2.5, "enhed": "cl", "ingrediens": "maraschino-likør" },
-      { "mængde": 2.5, "enhed": "cl", "ingrediens": "limesaft" }
+      { "mængde": 25, "enhed": "ml", "ingrediens": "gin" },
+      { "mængde": 25, "enhed": "ml", "ingrediens": "grøn Chartreuse" },
+      { "mængde": 25, "enhed": "ml", "ingrediens": "maraschino-likør" },
+      { "mængde": 25, "enhed": "ml", "ingrediens": "limesaft" }
     ],
     "fremgangsmåde": ["Shake med is, dobbelt-si i coupe.", "Garnér."],
     "billede": ""
@@ -550,9 +563,9 @@
     "glastype": "Martini glass",
     "garnish": "Citronzest",
     "ingredienser": [
-      { "mængde": 6, "enhed": "cl", "ingrediens": "gin" },
-      { "mængde": 1.5, "enhed": "cl", "ingrediens": "vodka" },
-      { "mængde": 1.5, "enhed": "cl", "ingrediens": "Lillet Blanc (eller lign.)" }
+      { "mængde": 60, "enhed": "ml", "ingrediens": "gin" },
+      { "mængde": 15, "enhed": "ml", "ingrediens": "vodka" },
+      { "mængde": 15, "enhed": "ml", "ingrediens": "Lillet Blanc (eller lign.)" }
     ],
     "fremgangsmåde": ["Ryst eller rør koldt.", "Si i afkølet glas og garnér."],
     "billede": ""
@@ -562,11 +575,11 @@
     "glastype": "Nick & Nora",
     "garnish": "Citronzest",
     "ingredienser": [
-      { "mængde": 2.5, "enhed": "cl", "ingrediens": "gin" },
-      { "mængde": 2.5, "enhed": "cl", "ingrediens": "Cointreau" },
-      { "mængde": 2.5, "enhed": "cl", "ingrediens": "Lillet Blanc / Cocchi Americano" },
-      { "mængde": 2.5, "enhed": "cl", "ingrediens": "citronsaft" },
-      { "mængde": 0.2, "enhed": "cl", "ingrediens": "absint", "note": "1–2 dråber" }
+      { "mængde": 25, "enhed": "ml", "ingrediens": "gin" },
+      { "mængde": 25, "enhed": "ml", "ingrediens": "Cointreau" },
+      { "mængde": 25, "enhed": "ml", "ingrediens": "Lillet Blanc / Cocchi Americano" },
+      { "mængde": 25, "enhed": "ml", "ingrediens": "citronsaft" },
+      { "mængde": 2, "enhed": "dråber", "ingrediens": "absint" }
     ],
     "fremgangsmåde": ["Shake med is; dobbelt-si i coupe.", "Garnér."],
     "billede": ""
@@ -576,10 +589,10 @@
     "glastype": "Coupe",
     "garnish": "Hindbær",
     "ingredienser": [
-      { "mængde": 5, "enhed": "cl", "ingrediens": "gin" },
-      { "mængde": 2, "enhed": "cl", "ingrediens": "citronsaft" },
-      { "mængde": 2, "enhed": "cl", "ingrediens": "hindbærsirup" },
-      { "mængde": 2, "enhed": "cl", "ingrediens": "æggehvide" }
+      { "mængde": 50, "enhed": "ml", "ingrediens": "gin" },
+      { "mængde": 20, "enhed": "ml", "ingrediens": "citronsaft" },
+      { "mængde": 20, "enhed": "ml", "ingrediens": "hindbærsirup" },
+      { "mængde": 20, "enhed": "ml", "ingrediens": "æggehvide" }
     ],
     "fremgangsmåde": ["Dry shake, tilsæt is og shake igen.", "Dobbelt-si i coupe og garnér."],
     "billede": ""
@@ -589,10 +602,10 @@
     "glastype": "Rocks glass",
     "garnish": "Brombær og citron",
     "ingredienser": [
-      { "mængde": 5, "enhed": "cl", "ingrediens": "gin" },
-      { "mængde": 2.5, "enhed": "cl", "ingrediens": "citronsaft" },
-      { "mængde": 1.5, "enhed": "cl", "ingrediens": "sukkersirup" },
-      { "mængde": 1.5, "enhed": "cl", "ingrediens": "crème de mûre", "note": "drizzle" }
+      { "mængde": 50, "enhed": "ml", "ingrediens": "gin" },
+      { "mængde": 25, "enhed": "ml", "ingrediens": "citronsaft" },
+      { "mængde": 15, "enhed": "ml", "ingrediens": "sukkersirup" },
+      { "mængde": 15, "enhed": "ml", "ingrediens": "crème de mûre", "note": "drizzle" }
     ],
     "fremgangsmåde": ["Shake gin, citron og sirup; si over knust is.", "Drizzle mûre, garnér."],
     "billede": ""
@@ -602,10 +615,10 @@
     "glastype": "Nick & Nora",
     "garnish": "Appelsintwist",
     "ingredienser": [
-      { "mængde": 2.5, "enhed": "cl", "ingrediens": "bourbon" },
-      { "mængde": 2.5, "enhed": "cl", "ingrediens": "Aperol" },
-      { "mængde": 2.5, "enhed": "cl", "ingrediens": "amaro (fx Nonino)" },
-      { "mængde": 2.5, "enhed": "cl", "ingrediens": "citronsaft" }
+      { "mængde": 25, "enhed": "ml", "ingrediens": "bourbon" },
+      { "mængde": 25, "enhed": "ml", "ingrediens": "Aperol" },
+      { "mængde": 25, "enhed": "ml", "ingrediens": "amaro (fx Nonino)" },
+      { "mængde": 25, "enhed": "ml", "ingrediens": "citronsaft" }
     ],
     "fremgangsmåde": ["Shake med is; dobbelt-si og garnér."],
     "billede": ""
@@ -615,11 +628,11 @@
     "glastype": "Tiki glass",
     "garnish": "Ananas og mynte",
     "ingredienser": [
-      { "mængde": 4.5, "enhed": "cl", "ingrediens": "mørk rom" },
-      { "mængde": 2.5, "enhed": "cl", "ingrediens": "Campari" },
-      { "mængde": 4.5, "enhed": "cl", "ingrediens": "ananasjuice" },
-      { "mængde": 1.5, "enhed": "cl", "ingrediens": "limesaft" },
-      { "mængde": 1, "enhed": "cl", "ingrediens": "sukkersirup" }
+      { "mængde": 45, "enhed": "ml", "ingrediens": "mørk rom" },
+      { "mængde": 25, "enhed": "ml", "ingrediens": "Campari" },
+      { "mængde": 45, "enhed": "ml", "ingrediens": "ananasjuice" },
+      { "mængde": 15, "enhed": "ml", "ingrediens": "limesaft" },
+      { "mængde": 10, "enhed": "ml", "ingrediens": "sukkersirup" }
     ],
     "fremgangsmåde": ["Shake med is og si over is.", "Garnér."],
     "billede": ""
@@ -629,12 +642,12 @@
     "glastype": "Coupe",
     "garnish": "Passionsfrugt-halvdel",
     "ingredienser": [
-      { "mængde": 5, "enhed": "cl", "ingrediens": "vaniljevodka" },
-      { "mængde": 2, "enhed": "cl", "ingrediens": "passionsfrugt-likør" },
-      { "mængde": 3, "enhed": "cl", "ingrediens": "passionsfrugt-puré" },
-      { "mængde": 2, "enhed": "cl", "ingrediens": "vaniljesirup" },
-      { "mængde": 2, "enhed": "cl", "ingrediens": "limesaft" },
-      { "mængde": 6, "enhed": "cl", "ingrediens": "mousserende vin", "note": "serveres ved siden af" }
+      { "mængde": 50, "enhed": "ml", "ingrediens": "vaniljevodka" },
+      { "mængde": 20, "enhed": "ml", "ingrediens": "passionsfrugt-likør" },
+      { "mængde": 30, "enhed": "ml", "ingrediens": "passionsfrugt-puré" },
+      { "mængde": 20, "enhed": "ml", "ingrediens": "vaniljesirup" },
+      { "mængde": 20, "enhed": "ml", "ingrediens": "limesaft" },
+      { "mængde": 60, "enhed": "ml", "ingrediens": "mousserende vin", "note": "serveres ved siden af" }
     ],
     "fremgangsmåde": ["Shake alt undtagen mousserende med is og dobbelt-si i coupe.", "Server med lille shot mousserende ved siden af; garnér."],
     "billede": ""
@@ -644,8 +657,8 @@
     "glastype": "Flute",
     "garnish": "—",
     "ingredienser": [
-      { "mængde": 3, "enhed": "cl", "ingrediens": "ferskenpuré" },
-      { "mængde": 9, "enhed": "cl", "ingrediens": "prosecco", "note": "top" }
+      { "mængde": 30, "enhed": "ml", "ingrediens": "ferskenpuré" },
+      { "mængde": 90, "enhed": "ml", "ingrediens": "prosecco", "note": "top" }
     ],
     "fremgangsmåde": ["Hæld puré i flute, top med prosecco.", "Rør forsigtigt."],
     "billede": ""
@@ -655,8 +668,8 @@
     "glastype": "Flute",
     "garnish": "Citronzest (valgfrit)",
     "ingredienser": [
-      { "mængde": 1, "enhed": "cl", "ingrediens": "crème de cassis" },
-      { "mængde": 9, "enhed": "cl", "ingrediens": "champagne", "note": "top" }
+      { "mængde": 10, "enhed": "ml", "ingrediens": "crème de cassis" },
+      { "mængde": 90, "enhed": "ml", "ingrediens": "champagne", "note": "top" }
     ],
     "fremgangsmåde": ["Cassis i flute, top med champagne.", "Rør kort."],
     "billede": ""
@@ -666,8 +679,8 @@
     "glastype": "Flute",
     "garnish": "Appelsinskal (valgfrit)",
     "ingredienser": [
-      { "mængde": 6, "enhed": "cl", "ingrediens": "appelsinjuice" },
-      { "mængde": 6, "enhed": "cl", "ingrediens": "mousserende vin" }
+      { "mængde": 60, "enhed": "ml", "ingrediens": "appelsinjuice" },
+      { "mængde": 60, "enhed": "ml", "ingrediens": "mousserende vin" }
     ],
     "fremgangsmåde": ["Fyld halvt med juice og top med mousserende.", "Rør blidt."],
     "billede": ""
@@ -677,10 +690,10 @@
     "glastype": "Varmedrik-glas",
     "garnish": "Letpisket fløde",
     "ingredienser": [
-      { "mængde": 4, "enhed": "cl", "ingrediens": "irsk whiskey" },
-      { "mængde": 2, "enhed": "tsk", "ingrediens": "brun sukker" },
-      { "mængde": 9, "enhed": "cl", "ingrediens": "varm kaffe" },
-      { "mængde": 3, "enhed": "cl", "ingrediens": "fløde", "note": "letpisket til låg" }
+      { "mængde": 40, "enhed": "ml", "ingrediens": "irsk whiskey" },
+      { "mængde": 20, "enhed": "tsk", "ingrediens": "brun sukker" },
+      { "mængde": 90, "enhed": "ml", "ingrediens": "varm kaffe" },
+      { "mængde": 3, "enhed": "ml", "ingrediens": "fløde", "note": "letpisket til låg" }
     ],
     "fremgangsmåde": ["Forvarm glas; rør whiskey, sukker og kaffe.", "Flyd fløde ovenpå."],
     "billede": ""
@@ -690,12 +703,12 @@
     "glastype": "Highball",
     "garnish": "Selleri og citron",
     "ingredienser": [
-      { "mængde": 5, "enhed": "cl", "ingrediens": "vodka" },
-      { "mængde": 10, "enhed": "cl", "ingrediens": "tomatjuice" },
-      { "mængde": 2, "enhed": "cl", "ingrediens": "citronsaft" },
-      { "mængde": 4, "enhed": "dash", "ingrediens": "Worcestershire sauce" },
-      { "mængde": 2, "enhed": "dash", "ingrediens": "Tabasco", "valgfri": true },
-      { "mængde": 1, "enhed": "knsp", "ingrediens": "salt og peber" }
+      { "mængde": 50, "enhed": "ml", "ingrediens": "vodka" },
+      { "mængde": 100, "enhed": "ml", "ingrediens": "tomatjuice" },
+      { "mængde": 20, "enhed": "ml", "ingrediens": "citronsaft" },
+      { "mængde": 40, "enhed": "dash", "ingrediens": "Worcestershire sauce" },
+      { "mængde": 20, "enhed": "dash", "ingrediens": "Tabasco", "valgfri": true },
+      { "mængde": 10, "enhed": "knsp", "ingrediens": "salt og peber" }
     ],
     "fremgangsmåde": ["Rør alt forsigtigt med is i glas.", "Smag til og garnér."],
     "billede": ""
@@ -999,7 +1012,7 @@
       { "mængde": 67.5, "enhed": "ml", "ingrediens": "sake" },
       { "mængde": 7.5, "enhed": "ml", "ingrediens": "sirup" }
     ],
-    "fremgangsmåde": ["Mos to skiver frisk ingefær i shaker. Tilføj ingredienser og ryst med is."],
+    "fremgangsmåde": ["Mos to skiver frisk ingefær i shaker.", "Tilføj ingredienser og ryst med is.", "Dobbelt-si i afkølet martiniglas og pynt med en skive citron."],
     "billede": "img/cocktails/sloe-negroni.jpg"
   }
 ]

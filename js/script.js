@@ -19,7 +19,7 @@ document.querySelectorAll("[data-close]").forEach((btn) => btn.addEventListener(
 
 // data
 let data = [];
-let viewUnit = "cl"; // "cl" | "oz"
+let viewUnit = "ml"; // "ml" | "oz"
 let usageMap = null; // Map over ingrediens → { name, count }
 
 // Ekstra info om ingredienser til indkøbslisten
@@ -153,7 +153,7 @@ const ingredientMeta = {
   },
   olivenlage: {
     type: "Smagsgiver (lage)",
-    note: "Brug væsken fra olivenglas til Dirty Martini – 0,5–1 cl pr. drink.",
+    note: "Brug væsken fra olivenglas til Dirty Martini – 5–10 ml pr. drink.",
   },
 
   /* === SIRUPPER === */
@@ -204,8 +204,8 @@ async function init() {
     glassEl.addEventListener("change", render);
 
     unitToggleEl.addEventListener("click", () => {
-      viewUnit = viewUnit === "cl" ? "oz" : "cl";
-      unitToggleEl.textContent = viewUnit === "cl" ? "Vis i oz" : "Vis i cl";
+      viewUnit = viewUnit === "ml" ? "oz" : "ml";
+      unitToggleEl.textContent = viewUnit === "ml" ? "Vis i oz" : "Vis i ml";
       unitToggleEl.setAttribute("aria-pressed", String(viewUnit === "oz"));
 
       // opdater åben opskrift-modal (så mål skifter)
@@ -443,7 +443,7 @@ function renderModalContent(item) {
   }
 
   // lille hjælpetekst nederst
-  frag.append(el("div", { class: "modal-footer" }, el("div", { class: "helper" }, viewUnit === "cl" ? "Tip: Skift til oz for US-mål" : "Tip: Skift til cl for metriske mål")));
+  frag.append(el("div", { class: "modal-footer" }, el("div", { class: "helper" }, viewUnit === "ml" ? "Tip: Skift til oz for US-mål" : "Tip: Skift til ml for metriske mål")));
 
   return frag;
 }
@@ -555,7 +555,7 @@ function formatMeasure(n, unit) {
   if (n == null) return "—";
   const u = (unit || "").toLowerCase();
 
-  if (viewUnit === "cl") {
+  if (viewUnit === "ml") {
     if (u === "oz") return toFixedSafe(n * 2.95735) + " cl";
     if (u === "ml") return toFixedSmart(n / 10) + " cl";
     if (u === "dl") return toFixedSmart(n * 10) + " cl";

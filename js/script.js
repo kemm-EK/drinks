@@ -556,15 +556,19 @@ function formatMeasure(n, unit) {
   const u = (unit || "").toLowerCase();
 
   if (viewUnit === "ml") {
-    if (u === "oz") return toFixedSafe(n * 2.95735) + " cl";
-    if (u === "ml") return toFixedSmart(n / 10) + " cl";
-    if (u === "dl") return toFixedSmart(n * 10) + " cl";
+    // output i ml
+    if (u === "oz") return toFixedSmart(n * 29.5735) + " ml";
+    if (u === "cl") return toFixedSmart(n * 10) + " ml";
+    if (u === "dl") return toFixedSmart(n * 100) + " ml";
+    if (u === "ml") return toFixedSmart(n) + " ml";
     return `${toFixedSmart(n)} ${unit || ""}`.trim();
   } else {
-    if (u === "cl") return toFixedSmart(n * 0.33814) + " oz";
+    // output i oz
     if (u === "ml") return toFixedSmart(n * 0.033814) + " oz";
+    if (u === "cl") return toFixedSmart(n * 0.33814) + " oz";
     if (u === "dl") return toFixedSmart(n * 3.3814) + " oz";
-    return `${toFixedSmart(n)} ${unit}`.trim();
+    if (u === "oz") return toFixedSmart(n) + " oz";
+    return `${toFixedSmart(n)} ${unit || ""}`.trim();
   }
 }
 

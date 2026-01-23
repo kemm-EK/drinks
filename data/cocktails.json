@@ -307,10 +307,10 @@
       { "mængde": 30, "enhed": "ml", "ingrediens": "limesaft" },
       { "mængde": 20, "enhed": "ml", "ingrediens": "sukkersirup" },
       { "mængde": 20, "enhed": "ml", "ingrediens": "æggehvide" },
-      { "mængde": 3, "enhed": "dash", "ingrediens": "Angostura bitters", "valgfri": true, "note": "til pynt" }
+      { "mængde": 3, "enhed": "dash", "ingrediens": "Angostura aromatic bitters", "valgfri": true, "note": "til pynt" }
     ],
     "fremgangsmåde": ["Dry shake, tilsæt is og shake igen.", "Dobbelt-si i coupe.", "Pynt skummet med bitters."],
-    "billede": ""
+    "billede": "img/ai/piscosour.png"
   },
   {
     "titel": "Mai Tai",
@@ -324,7 +324,7 @@
       { "mængde": 15, "enhed": "ml", "ingrediens": "orange curaçao" }
     ],
     "fremgangsmåde": ["Shake med is og si over knust is.", "Garnér generøst."],
-    "billede": ""
+    "billede": "img/ai/maitai.png"
   },
   {
     "titel": "Paloma",
@@ -336,7 +336,7 @@
       { "mængde": 120, "enhed": "ml", "ingrediens": "grapefrugt-sodavand", "note": "top" }
     ],
     "fremgangsmåde": ["Saltrim (valgfrit).", "Byg i glas over is, rør kort, garnér."],
-    "billede": ""
+    "billede": "img/ai/paloma.png"
   },
   {
     "titel": "Aperol Spritz",
@@ -348,7 +348,7 @@
       { "mængde": 20, "enhed": "ml", "ingrediens": "sodavand" }
     ],
     "fremgangsmåde": ["Byg i vinglas med is.", "Rør let og garnér."],
-    "billede": ""
+    "billede": "img/ai/aperolspritz.png"
   },
   {
     "titel": "Boulevardier",
@@ -360,7 +360,7 @@
       { "mængde": 30, "enhed": "ml", "ingrediens": "sød vermouth" }
     ],
     "fremgangsmåde": ["Rør med is; server over stor is eller neat.", "Garnér."],
-    "billede": ""
+    "billede": "img/ai/boulevardier.png"
   },
   {
     "titel": "Sidecar",
@@ -372,7 +372,7 @@
       { "mængde": 20, "enhed": "ml", "ingrediens": "citronsaft" }
     ],
     "fremgangsmåde": ["Shake med is; dobbelt-si i afkølet glas.", "Garnér."],
-    "billede": ""
+    "billede": "img/ai/sidecar.png"
   },
   {
     "titel": "French 75",
@@ -385,7 +385,7 @@
       { "mængde": 60, "enhed": "ml", "ingrediens": "champagne", "note": "top" }
     ],
     "fremgangsmåde": ["Shake gin, citron og sirup; si i flute.", "Top med champagne og garnér."],
-    "billede": ""
+    "billede": "img/ai/french75.png"
   },
   {
     "titel": "Sazerac",
@@ -398,7 +398,7 @@
       { "mængde": 5, "enhed": "ml", "ingrediens": "absint", "note": "glas-skyl" }
     ],
     "fremgangsmåde": ["Skyl glas med absint og sæt til side.", "Rør de øvrige ingredienser kolde og si i glasset.", "Garnér med citronzest."],
-    "billede": ""
+    "billede": "img/ai/sazerac.png"
   },
   {
     "titel": "Mint Julep",
@@ -411,7 +411,7 @@
       { "mængde": 10, "enhed": "ml", "ingrediens": "sodavand", "valgfri": true, "note": "stænk" }
     ],
     "fremgangsmåde": ["Muddle mynte let med sirup i kop.", "Fyld knust is og tilsæt bourbon; rør.", "Top med mere is og garnér."],
-    "billede": ""
+    "billede": "img/ai/mintjulep.png"
   },
   {
     "titel": "Caipirinha",
@@ -423,7 +423,7 @@
       { "mængde": 60, "enhed": "ml", "ingrediens": "cachaça" }
     ],
     "fremgangsmåde": ["Muddle lime og sukker.", "Tilsæt knust is og cachaça; rør.", "Garnér."],
-    "billede": ""
+    "billede": "img/ai/caipirinha.png"
   },
   {
     "titel": "Dark 'n' Stormy",
@@ -434,7 +434,7 @@
       { "mængde": 50, "enhed": "ml", "ingrediens": "mørk rom", "note": "float" }
     ],
     "fremgangsmåde": ["Byg i glas med is; ginger beer først.", "Float rom, klem lime og garnér."],
-    "billede": ""
+    "billede": "img/ai/darknstormy.png"
   },
   {
     "titel": "Americano",
@@ -446,7 +446,7 @@
       { "mængde": 80, "enhed": "ml", "ingrediens": "sodavand", "note": "top" }
     ],
     "fremgangsmåde": ["Byg i glas over is.", "Rør kort og garnér."],
-    "billede": ""
+    "billede": "img/ai/x.png"
   },
   {
     "titel": "Espresso Martini",
@@ -459,7 +459,7 @@
       { "mængde": 10, "enhed": "ml", "ingrediens": "sukkersirup" }
     ],
     "fremgangsmåde": ["Shake meget hårdt med is.", "Dobbelt-si i coupe og pynt."],
-    "billede": ""
+    "billede": "img/ai/espressomartini.png"
   },
   {
     "titel": "White Russian",
@@ -471,7 +471,7 @@
       { "mængde": 30, "enhed": "ml", "ingrediens": "fløde eller mælk" }
     ],
     "fremgangsmåde": ["Byg over is og rør let."],
-    "billede": ""
+    "billede": "img/ai/x.png"
   },
   {
     "titel": "Black Russian",
@@ -482,7 +482,7 @@
       { "mængde": 30, "enhed": "ml", "ingrediens": "kaffelikør" }
     ],
     "fremgangsmåde": ["Byg over is og rør kort."],
-    "billede": ""
+    "billede": "img/ai/blackrussian.png"
   },
   {
     "titel": "Piña Colada",
@@ -494,7 +494,7 @@
       { "mængde": 30, "enhed": "ml", "ingrediens": "kokoscreme" }
     ],
     "fremgangsmåde": ["Blend med is til cremet konsistens.", "Hæld i glas og garnér."],
-    "billede": ""
+    "billede": "img/ai/pinacolada.png"
   },
   {
     "titel": "Rum Old Fashioned",
@@ -506,7 +506,7 @@
       { "mængde": 2, "enhed": "dash", "ingrediens": "Angostura bitters" }
     ],
     "fremgangsmåde": ["Rør med is til koldt.", "Si over stor is; garnér."],
-    "billede": ""
+    "billede": "img/ai/x.png"
   },
   {
     "titel": "Gimlet",
@@ -518,7 +518,7 @@
       { "mængde": 20, "enhed": "ml", "ingrediens": "sukkersirup" }
     ],
     "fremgangsmåde": ["Shake med is; dobbelt-si i coupe.", "Garnér."],
-    "billede": ""
+    "billede": "img/ai/gimlet.png"
   },
   {
     "titel": "Bee's Knees",
@@ -530,7 +530,7 @@
       { "mængde": 20, "enhed": "ml", "ingrediens": "honningsirup" }
     ],
     "fremgangsmåde": ["Shake med is; dobbelt-si i coupe.", "Garnér."],
-    "billede": ""
+    "billede": "img/ai/x.png"
   },
   {
     "titel": "Aviation",
@@ -543,7 +543,7 @@
       { "mængde": 5, "enhed": "ml", "ingrediens": "crème de violette" }
     ],
     "fremgangsmåde": ["Shake med is og dobbelt-si.", "Garnér."],
-    "billede": ""
+    "billede": "img/ai/x.png"
   },
   {
     "titel": "Last Word",
@@ -556,7 +556,7 @@
       { "mængde": 25, "enhed": "ml", "ingrediens": "limesaft" }
     ],
     "fremgangsmåde": ["Shake med is, dobbelt-si i coupe.", "Garnér."],
-    "billede": ""
+    "billede": "img/ai/lastword.png"
   },
   {
     "titel": "Vesper",
@@ -568,7 +568,7 @@
       { "mængde": 15, "enhed": "ml", "ingrediens": "Lillet Blanc (eller lign.)" }
     ],
     "fremgangsmåde": ["Ryst eller rør koldt.", "Si i afkølet glas og garnér."],
-    "billede": ""
+    "billede": "img/ai/vesper.png"
   },
   {
     "titel": "Corpse Reviver #2",
@@ -582,7 +582,7 @@
       { "mængde": 2, "enhed": "dråber", "ingrediens": "absint" }
     ],
     "fremgangsmåde": ["Shake med is; dobbelt-si i coupe.", "Garnér."],
-    "billede": ""
+    "billede": "img/ai/corpsereviver-2.png"
   },
   {
     "titel": "Clover Club",
@@ -595,7 +595,7 @@
       { "mængde": 20, "enhed": "ml", "ingrediens": "æggehvide" }
     ],
     "fremgangsmåde": ["Dry shake, tilsæt is og shake igen.", "Dobbelt-si i coupe og garnér."],
-    "billede": ""
+    "billede": "img/ai/x.png"
   },
   {
     "titel": "Bramble",
@@ -608,7 +608,7 @@
       { "mængde": 15, "enhed": "ml", "ingrediens": "crème de mûre", "note": "drizzle" }
     ],
     "fremgangsmåde": ["Shake gin, citron og sirup; si over knust is.", "Drizzle mûre, garnér."],
-    "billede": ""
+    "billede": "img/ai/x.png"
   },
   {
     "titel": "Paper Plane",
@@ -621,7 +621,7 @@
       { "mængde": 25, "enhed": "ml", "ingrediens": "citronsaft" }
     ],
     "fremgangsmåde": ["Shake med is; dobbelt-si og garnér."],
-    "billede": ""
+    "billede": "img/ai/x.png"
   },
   {
     "titel": "Jungle Bird",
@@ -635,7 +635,7 @@
       { "mængde": 10, "enhed": "ml", "ingrediens": "sukkersirup" }
     ],
     "fremgangsmåde": ["Shake med is og si over is.", "Garnér."],
-    "billede": ""
+    "billede": "img/ai/x.png"
   },
   {
     "titel": "Pornstar Martini",
@@ -650,7 +650,7 @@
       { "mængde": 60, "enhed": "ml", "ingrediens": "mousserende vin", "note": "serveres ved siden af" }
     ],
     "fremgangsmåde": ["Shake alt undtagen mousserende med is og dobbelt-si i coupe.", "Server med lille shot mousserende ved siden af; garnér."],
-    "billede": ""
+    "billede": "img/ai/x.png"
   },
   {
     "titel": "Bellini",
@@ -661,7 +661,7 @@
       { "mængde": 90, "enhed": "ml", "ingrediens": "prosecco", "note": "top" }
     ],
     "fremgangsmåde": ["Hæld puré i flute, top med prosecco.", "Rør forsigtigt."],
-    "billede": ""
+    "billede": "img/ai/x.png"
   },
   {
     "titel": "Kir Royale",
@@ -672,7 +672,7 @@
       { "mængde": 90, "enhed": "ml", "ingrediens": "champagne", "note": "top" }
     ],
     "fremgangsmåde": ["Cassis i flute, top med champagne.", "Rør kort."],
-    "billede": ""
+    "billede": "img/ai/x.png"
   },
   {
     "titel": "Mimosa",
@@ -683,7 +683,7 @@
       { "mængde": 60, "enhed": "ml", "ingrediens": "mousserende vin" }
     ],
     "fremgangsmåde": ["Fyld halvt med juice og top med mousserende.", "Rør blidt."],
-    "billede": ""
+    "billede": "img/ai/mimosa.png"
   },
   {
     "titel": "Irish Coffee",
@@ -696,7 +696,7 @@
       { "mængde": 3, "enhed": "ml", "ingrediens": "fløde", "note": "letpisket til låg" }
     ],
     "fremgangsmåde": ["Forvarm glas; rør whiskey, sukker og kaffe.", "Flyd fløde ovenpå."],
-    "billede": ""
+    "billede": "img/ai/x.png"
   },
   {
     "titel": "Bloody Mary",
@@ -711,7 +711,7 @@
       { "mængde": 10, "enhed": "knsp", "ingrediens": "salt og peber" }
     ],
     "fremgangsmåde": ["Rør alt forsigtigt med is i glas.", "Smag til og garnér."],
-    "billede": ""
+    "billede": "img/ai/x.png"
   },
   {
     "titel": "Long Island Iced Tea",
@@ -728,7 +728,7 @@
       { "mængde": 60, "enhed": "ml", "ingrediens": "cola", "note": "top" }
     ],
     "fremgangsmåde": ["Shake alt undtagen cola og si over is.", "Top med cola, rør og garnér."],
-    "billede": ""
+    "billede": "img/ai/x.png"
   },
   {
     "titel": "Tequila Sunrise",
@@ -740,7 +740,7 @@
       { "mængde": 10, "enhed": "ml", "ingrediens": "grenadine", "note": "drizzle" }
     ],
     "fremgangsmåde": ["Byg over is; grenadine til sidst for sunrise-effekt.", "Garnér."],
-    "billede": ""
+    "billede": "img/ai/x.png"
   },
   {
     "titel": "Singapore Sling",
@@ -757,7 +757,7 @@
       { "mængde": 10, "enhed": "dash", "ingrediens": "Angostura bitters" }
     ],
     "fremgangsmåde": ["Shake med is og si over is.", "Top evt. med en smule sodavand og garnér."],
-    "billede": ""
+    "billede": "img/ai/singaporesling.png"
   },
   {
     "titel": "Ramos Gin Fizz",
@@ -774,7 +774,7 @@
       { "mængde": 60, "enhed": "ml", "ingrediens": "sodavand", "note": "top i glas" }
     ],
     "fremgangsmåde": ["Dry shake meget længe, tilsæt is og shake igen.", "Si i glas uden is og top forsigtigt med sodavand."],
-    "billede": ""
+    "billede": "img/ai/x.png"
   },
   {
     "titel": "Southside",
@@ -787,7 +787,7 @@
       { "mængde": 8, "enhed": "stk", "ingrediens": "mynteblade" }
     ],
     "fremgangsmåde": ["Shake alt hårdt med is.", "Dobbelt-si i coupe og garnér."],
-    "billede": ""
+    "billede": "img/ai/southside.png"
   },
   {
     "titel": "French Martini",
@@ -799,7 +799,7 @@
       { "mængde": 40, "enhed": "ml", "ingrediens": "ananasjuice" }
     ],
     "fremgangsmåde": ["Shake med is; dobbelt-si i coupe.", "Garnér."],
-    "billede": ""
+    "billede": "img/ai/x.png"
   },
   {
     "titel": "Rob Roy",
@@ -811,7 +811,7 @@
       { "mængde": 2, "enhed": "dash", "ingrediens": "Angostura bitters" }
     ],
     "fremgangsmåde": ["Rør med is og si i afkølet glas.", "Garnér."],
-    "billede": ""
+    "billede": "img/ai/x.png"
   },
   {
     "titel": "Godfather",
@@ -822,7 +822,7 @@
       { "mængde": 15, "enhed": "ml", "ingrediens": "amaretto" }
     ],
     "fremgangsmåde": ["Rør med is, si over frisk is.", "Garnér (valgfrit)."],
-    "billede": ""
+    "billede": "img/ai/x.png"
   },
   {
     "titel": "Amaretto Sour",
@@ -836,7 +836,7 @@
       { "mængde": 20, "enhed": "ml", "ingrediens": "æggehvide" }
     ],
     "fremgangsmåde": ["Dry shake, tilsæt is og shake igen.", "Si over is og garnér."],
-    "billede": ""
+    "billede": "img/ai/amarettosour.png"
   },
   {
     "titel": "Gin Fizz",
@@ -849,7 +849,7 @@
       { "mængde": 80, "enhed": "ml", "ingrediens": "sodavand", "note": "top" }
     ],
     "fremgangsmåde": ["Shake gin, citron og sirup og si i glas med is.", "Top med sodavand."],
-    "billede": ""
+    "billede": "img/ai/x.png"
   },
   {
     "titel": "Caipiroska",
@@ -861,7 +861,7 @@
       { "mængde": 60, "enhed": "ml", "ingrediens": "vodka" }
     ],
     "fremgangsmåde": ["Muddle lime og sukker.", "Tilsæt knust is og vodka; rør.", "Garnér."],
-    "billede": ""
+    "billede": "img/ai/x.png"
   },
   {
     "titel": "Rum Punch",
@@ -876,7 +876,7 @@
       { "mængde": 1, "enhed": "knsp", "ingrediens": "revet muskat", "note": "på toppen" }
     ],
     "fremgangsmåde": ["Rør alt over is i glas.", "Smag til og garnér."],
-    "billede": ""
+    "billede": "img/ai/x.png"
   },
   {
     "titel": "Hemingway Daiquiri",
@@ -889,7 +889,7 @@
       { "mængde": 15, "enhed": "ml", "ingrediens": "maraschino-likør" }
     ],
     "fremgangsmåde": ["Shake med is; dobbelt-si i coupe.", "Garnér."],
-    "billede": ""
+    "billede": "img/ai/x.png"
   },
   {
     "titel": "Boulevard Collins (Bourbon Collins)",
@@ -902,7 +902,7 @@
       { "mængde": 80, "enhed": "ml", "ingrediens": "sodavand", "note": "top" }
     ],
     "fremgangsmåde": ["Shake bourbon, citron og sirup; si i isfyldt glas.", "Top med sodavand og garnér."],
-    "billede": ""
+    "billede": "img/ai/x.png"
   },
   {
     "titel": "Vieux Carré",
@@ -917,7 +917,7 @@
       { "mængde": 2, "enhed": "dash", "ingrediens": "Peychaud's bitters" }
     ],
     "fremgangsmåde": ["Rør alt koldt med is.", "Si over stor is; garnér."],
-    "billede": ""
+    "billede": "img/ai/x.png"
   },
   {
     "titel": "Sea Breeze",
@@ -929,7 +929,7 @@
       { "mængde": 50, "enhed": "ml", "ingrediens": "grapefrugtsaft" }
     ],
     "fremgangsmåde": ["Byg i glas med is, rør kort.", "Garnér."],
-    "billede": ""
+    "billede": "img/ai/x.png"
   },
   {
     "titel": "Harvey Wallbanger",
@@ -941,7 +941,7 @@
       { "mængde": 15, "enhed": "ml", "ingrediens": "Galliano", "note": "float" }
     ],
     "fremgangsmåde": ["Byg vodka og juice over is; rør.", "Float Galliano og garnér."],
-    "billede": ""
+    "billede": "img/ai/x.png"
   },
   {
     "titel": "Aperitivo Americano (Vermouth & Soda)",
@@ -952,7 +952,7 @@
       { "mængde": 80, "enhed": "ml", "ingrediens": "sodavand", "note": "top" }
     ],
     "fremgangsmåde": ["Byg i glas med is, rør kort.", "Garnér med citrus."],
-    "billede": ""
+    "billede": "img/ai/x.png"
   },
   {
     "titel": "Sloe Gin Fizz",
@@ -965,7 +965,7 @@
       { "mængde": 60, "enhed": "ml", "ingrediens": "sodavand" }
     ],
     "fremgangsmåde": ["Ryst slåengin, citronsaft og sirup med is.", "Si over is i et højt glas.", "Top med sodavand og rør forsigtigt.", "Garnér med en citronskive."],
-    "billede": "img/cocktails/sloe-gin-fizz.jpg"
+    "billede": "img/ai/sloeginfizz.png"
   },
   {
     "titel": "Charlie Chaplin",
@@ -977,7 +977,7 @@
       { "mængde": 30, "enhed": "ml", "ingrediens": "frisk limesaft" }
     ],
     "fremgangsmåde": ["Ryst alle ingredienser med is.", "Si i et afkølet coupeglas.", "Server uden pynt eller med en lille tørret frugt."],
-    "billede": "img/cocktails/charlie-chaplin.jpg"
+    "billede": "img/ai/charliechaplin.png"
   },
   {
     "titel": "Blackthorn (Sloe Gin)",
@@ -989,7 +989,7 @@
       { "mængde": 2, "enhed": "dash", "ingrediens": "orange bitters" }
     ],
     "fremgangsmåde": ["Rør alle ingredienser med is i et røreglas.", "Si i et afkølet coupeglas.", "Garnér med en citron-twist."],
-    "billede": "img/cocktails/blackthorn-sloe.jpg"
+    "billede": "img/ai/blackthorn.png"
   },
   {
     "titel": "Sloe Negroni",
@@ -1001,7 +1001,7 @@
       { "mængde": 30, "enhed": "ml", "ingrediens": "sød vermouth" }
     ],
     "fremgangsmåde": ["Rør ingredienser med is og si over is i et lavt glas.", "Garnér med en bred strimmel appelsinskal."],
-    "billede": "img/cocktails/sloe-negroni.jpg"
+    "billede": "img/ai/sloenegroni.png"
   },
   {
     "titel": "Asian Ginger Conctail",
@@ -1013,6 +1013,6 @@
       { "mængde": 7.5, "enhed": "ml", "ingrediens": "sirup" }
     ],
     "fremgangsmåde": ["Mos to skiver frisk ingefær i shaker.", "Tilføj ingredienser og ryst med is.", "Dobbelt-si i afkølet martiniglas og pynt med en skive citron."],
-    "billede": "img/cocktails/sloe-negroni.jpg"
+    "billede": "img/ai/asianginger.png"
   }
 ]

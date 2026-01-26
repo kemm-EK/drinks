@@ -1014,5 +1014,21 @@
     ],
     "fremgangsmåde": ["Mos to skiver frisk ingefær i shaker.", "Tilføj ingredienser og ryst med is.", "Dobbelt-si i afkølet martiniglas og pynt med en skive citron."],
     "billede": "img/ai/asianginger.png"
+  },
+  {
+    "titel": "Foghorn Conctail",
+    "glastype": "Coupe",
+    "garnish": "Lemon twist",
+    "ingredienser": [
+      { "mængde": 25, "enhed": "ml", "ingrediens": "gin" },
+      { "mængde": 15, "enhed": "ml", "ingrediens": "lillet blanc" },
+      { "mængde": 15, "enhed": "ml", "ingrediens": "Cointreau" },
+      { "mængde": 2.5, "enhed": "ml", "ingrediens": "absinthe" },
+      { "mængde": 2, "enhed": "dråber", "ingrediens": "vanilleessens" },
+      { "mængde": 1, "enhed": "dråbe", "ingrediens": "saline 2:1" },
+      { "mængde": 1, "enhed": "dash", "ingrediens": "cacao bitter" }
+    ],
+    "fremgangsmåde": ["Shake med is.", "Dobbelt-si i afkølet coupe glas og pynt med en twist citron."],
+    "billede": "img/ai/foghorn.png"
   }
 ]
